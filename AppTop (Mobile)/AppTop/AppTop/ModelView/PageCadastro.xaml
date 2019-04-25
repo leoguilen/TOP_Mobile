@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTop.PageCadastro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="StartAndExpand" 
+                 HorizontalOptions="Center"
+                 BackgroundColor="White"
+                 Padding="35">
+                    <Image Source="LogoNovo" 
+                           HeightRequest="65"
+                           Margin="25"/>
+
+                    <Label Text="Olá novato"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="Fill"
+                           FontSize="25"
+                           TextColor="#03324c"/>
+
+                <Label Text="Está na hora de fazer o seu cadastro,
+                            Vamos lá!"
+                            HorizontalTextAlignment="Center"
+                            VerticalOptions="FillAndExpand"
+                            Margin="0"
+                            FontSize="15"
+                            Opacity="0.6"
+                            TextColor="Black"/>
+
+                <Label x:Name="lblErro" Text="Ocorreu um erro para efetuar o cadastro" 
+                       FontSize="Small" 
+                       TextColor="#ff0000"
+                       HorizontalTextAlignment="Center"
+                       IsVisible="False"/>
+                
+                <StackLayout BackgroundColor="White" 
+                             VerticalOptions="EndAndExpand"
+                             Margin="0,20,0,0">
+                    
+                    <Label x:Name="lblErroNome" Text="" 
+                       FontSize="Micro" 
+                       TextColor="#ff0000"
+                       IsVisible="True"/>
+                    
+                    <Label x:Name="lblNome" Text="Nome Completo" TextColor="Black"/>
+                    <Entry x:Name="txtNome" 
+                           IsTextPredictionEnabled="True"
+                           TextColor="Black" 
+                           PlaceholderColor="Black"
+                           HorizontalTextAlignment="Center"
+                           Unfocused="TxtNome_Unfocused"/>
+
+                    <Label x:Name="lblErroEmail" Text="" 
+                       FontSize="Micro" 
+                       TextColor="#ff0000"
+                       IsVisible="True"/>
+                    
+                    <Label x:Name="lblEmail" Text="Email" TextColor="Black"/>
+                    <Entry x:Name="txtEmail"
+                           Keyboard="Email"
+                           TextColor="Black" 
+                           PlaceholderColor="Black"
+                           HorizontalTextAlignment="Center"
+                           Unfocused="TxtEmail_Unfocused"/>
+
+                    <StackLayout VerticalOptions="StartAndExpand"
+                                 HorizontalOptions="Fill"
+                                 Orientation="Horizontal"
+                                 Margin="0,10,0,10">
+
+                        <Label x:Name="lblErrorSexo" Text="" 
+                                FontSize="Micro" 
+                                TextColor="#ff0000"
+                                IsVisible="True"/>
+                        
+                        <Picker x:Name="pckSexo" 
+                                HorizontalOptions="FillAndExpand"
+                                Title="Selecione o sexo:"
+                                Unfocused="PckSexo_Unfocused">
+                            <Picker.Items>
+                                <x:String>Masculino</x:String>
+                                <x:String>Feminino</x:String>
+                            </Picker.Items>
+                        </Picker>
+
+                        <DatePicker x:Name="dtPicDtNasc"
+                                    Format="dd-MM-yyyy"
+                                    HorizontalOptions="Fill"/>
+                        
+                    </StackLayout>
+
+                    <Label x:Name="lblErroUser" Text="" 
+                       FontSize="Micro" 
+                       TextColor="#ff0000"
+                       IsVisible="True"/>
+                    
+                    <Label x:Name="lblUsername" Text="Usuário" TextColor="Black"/>
+                    <Entry x:Name="txtUsername" 
+                           TextColor="Black" 
+                           PlaceholderColor="Black"
+                           HorizontalTextAlignment="Center"
+                           Unfocused="TxtUsername_Unfocused"/>
+
+                    <Label x:Name="lblErroSenha" Text="" 
+                       FontSize="Micro" 
+                       TextColor="#ff0000"
+                       IsVisible="True"/>
+                    
+                    <Label x:Name="lblSenha" Text="Senha" TextColor="Black"/>
+                    <Entry x:Name="txtSenha" 
+                           TextColor="Black" 
+                           PlaceholderColor="Black"
+                           HorizontalTextAlignment="Center"
+                           IsPassword="True"
+                           Unfocused="TxtSenha_Unfocused"/>
+
+                    <Label x:Name="lblErroConfSenha" Text="" 
+                       FontSize="Micro" 
+                       TextColor="#ff0000"
+                       IsVisible="True"/>
+                    
+                    <Label x:Name="lblConfSenha" Text="Confirmar Senha" TextColor="Black"/>
+                    <Entry x:Name="txtConfSenha" 
+                           TextColor="Black" 
+                           PlaceholderColor="Black"
+                           HorizontalTextAlignment="Center"
+                           IsPassword="True"
+                           Unfocused="TxtConfSenha_Unfocused"/>
+
+
+                    <Label x:Name="lblErroCidade" Text="" 
+                                FontSize="Micro" 
+                                TextColor="#ff0000"
+                                IsVisible="True"/>
+
+                    <StackLayout VerticalOptions="StartAndExpand"
+                                 HorizontalOptions="Fill"
+                                 Orientation="Horizontal"
+                                 Margin="0,10,0,10">
+                        
+                        <Label x:Name="lblCidade" Text="Cidade" 
+                               TextColor="Black"
+                               VerticalOptions="Center"/>
+                        <Entry x:Name="txtCidade" 
+                               TextColor="Black" 
+                               PlaceholderColor="Black"
+                               HorizontalOptions="FillAndExpand"
+                               HorizontalTextAlignment="Center"
+                               Unfocused="TxtCidade_Unfocused"/>
+
+                        <Picker x:Name="pckUF" Title="UF:"
+                                HorizontalOptions="Fill"
+                                Unfocused="PckUF_Unfocused">
+                            <Picker.Items>
+                                <x:String>AC</x:String>
+                                <x:String>AL</x:String>
+                                <x:String>AM</x:String>
+                                <x:String>AP</x:String>
+                                <x:String>BA</x:String>
+                                <x:String>CE</x:String>
+                                <x:String>DF</x:String>
+                                <x:String>ES</x:String>
+                                <x:String>GO</x:String>
+                                <x:String>MA</x:String>
+                                <x:String>MG</x:String>
+                                <x:String>MS</x:String>
+                                <x:String>MT</x:String>
+                                <x:String>PA</x:String>
+                                <x:String>PB</x:String>
+                                <x:String>PE</x:String>
+                                <x:String>PI</x:String>
+                                <x:String>PR</x:String>
+                                <x:String>RJ</x:String>
+                                <x:String>RN</x:String>
+                                <x:String>RO</x:String>
+                                <x:String>RR</x:String>
+                                <x:String>RS</x:String>
+                                <x:String>SC</x:String>
+                                <x:String>SE</x:String>
+                                <x:String>SP</x:String>
+                                <x:String>TO</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+
+                    <Label x:Name="lblErroNivel" Text="" 
+                       FontSize="Micro" 
+                       TextColor="#ff0000"
+                       IsVisible="True"/>
+                    
+                    <Picker x:Name="pckNivel" 
+                            Title="Selecione um nível acadêmico:"
+                            Unfocused="PckNivel_Unfocused">
+                        <Picker.Items>
+                            <x:String></x:String>
+                            <x:String>Fundamental - Incompleto</x:String>
+                            <x:String>Fundamental - Completo</x:String>
+                            <x:String>Médio - Incompleto</x:String>
+                            <x:String>Médio - Completo</x:String>
+                            <x:String>Superior - Incompleto</x:String>
+                            <x:String>Superior - Completo</x:String>
+                            <x:String>Pós-graduação - Incompleto</x:String>
+                            <x:String>Pós-graduação - Completo</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label x:Name="lblErroCel" Text="" 
+                       FontSize="Micro" 
+                       TextColor="#ff0000"
+                       IsVisible="True"/>
+                    
+                    <Label x:Name="lblCelular" Text="Celular" TextColor="Black"/>
+                    <Entry x:Name="txtCel" TextColor="Black" 
+                           PlaceholderColor="Black"
+                           HorizontalTextAlignment="Center"
+                           Keyboard="Telephone"
+                           Unfocused="TxtCel_Unfocused"/>
+
+                    <Button x:Name="btnCadastrar" Text="Cadastrar-me"
+                            BackgroundColor="#03324c"
+                            TextColor="White"
+                            Clicked="Cadastrar_Clicked"/>
+                    <AbsoluteLayout HorizontalOptions="CenterAndExpand">
+                        <ActivityIndicator x:Name="loader" Color="Teal"/>
+                    </AbsoluteLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

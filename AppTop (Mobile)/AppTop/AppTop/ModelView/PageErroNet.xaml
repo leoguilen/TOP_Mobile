@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTop.ModelView.PageErroNet">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="WhiteSmoke">
+            
+            <StackLayout VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="CenterAndExpand"
+                         Margin="15,0,15,0">
+                
+                <Image Source="iconErroWifi" />
+                
+                <Label Text="OPS! Identificamos um erro na conexão com o nosso servidor" 
+                   TextColor="DarkRed" FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+                
+                <Label Text="Verifique se você está conectado em um wifi e se possui uma conexão estável"
+                   TextColor="Gray" HorizontalTextAlignment="Center"/>
+                
+                <Button Text="Tentar novamente" HorizontalOptions="CenterAndExpand"
+                    Clicked="Button_Clicked" BackgroundColor="DarkRed"
+                    Margin="0,50,0,0" WidthRequest="200" TextColor="White"/>
+
+                <Label x:Name="lblCheckNet" Text="Checando..." TextColor="Black"
+                   HorizontalTextAlignment="Center" IsVisible="False" />
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

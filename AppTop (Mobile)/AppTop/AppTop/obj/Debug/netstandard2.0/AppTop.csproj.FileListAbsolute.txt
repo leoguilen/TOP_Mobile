@@ -1,0 +1,51 @@
+D:\Projetos C#\AppTop\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.deps.json
+D:\Projetos C#\AppTop\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.dll
+D:\Projetos C#\AppTop\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.pdb
+D:\Projetos C#\AppTop\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.csprojAssemblyReference.cache
+D:\Projetos C#\AppTop\AppTop\AppTop\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Projetos C#\AppTop\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.csproj.CoreCompileInputs.cache
+D:\Projetos C#\AppTop\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.AssemblyInfoInputs.cache
+D:\Projetos C#\AppTop\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.AssemblyInfo.cs
+D:\Projetos C#\AppTop\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.dll
+D:\Projetos C#\AppTop\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.pdb
+D:\Projetos C#\AppTop\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\MainPage.xaml.g.cs
+D:\Projetos C#\AppTop\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageCadastro.xaml.g.cs
+D:\Projetos C#\AppTop\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PagePrincipal.xaml.g.cs
+D:\Projetos C#\AppTop\AppTop\AppTop\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.deps.json
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.dll
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.pdb
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.csprojAssemblyReference.cache
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\MainPage.xaml.g.cs
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageCadastro.xaml.g.cs
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PagePrincipal.xaml.g.cs
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.csproj.CoreCompileInputs.cache
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.AssemblyInfoInputs.cache
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.AssemblyInfo.cs
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.dll
+C:\Users\LGuilen\Documents\Arquivos Projeto\Projeto Faculdade\CÓDIGO\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.pdb
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.deps.json
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.dll
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.pdb
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.csprojAssemblyReference.cache
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\MainPage.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageCadastro.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PagePrincipal.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.csproj.CoreCompileInputs.cache
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.AssemblyInfoInputs.cache
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.AssemblyInfo.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.dll
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.pdb
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PagePrincipalDetail.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp1.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp2.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.csproj.CopyComplete
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageValidaCadastro.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageErroNet.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\XamlC.stamp

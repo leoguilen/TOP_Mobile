@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTop.PagePrincipal" Title="Master">
+    
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" Padding="0">
+            <ContentPage.Content>
+                <StackLayout>
+                    <Grid BackgroundColor="Teal">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="80"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="10"/>
+                        </Grid.RowDefinitions>
+                        
+                        <ImageButton Source="LogoNovo" BackgroundColor="Transparent"
+                                     Grid.Column="1"
+                                     Grid.Row="1"
+                                     HeightRequest="10"
+                                     WidthRequest="10"/>
+                        
+                        <Label x:Name="lblTitleMenu"
+                                Grid.Column="1"
+                                Grid.Row="2"
+                                TextColor="White" 
+                                FontSize="Medium"/>
+                    </Grid>
+
+                    <TableView Intent="Menu">
+
+                        <TableSection>
+                            <ViewCell Tapped="Home">
+                                <StackLayout Padding="15,10" Orientation="Horizontal">
+                                    <Image Source="iconHome" HorizontalOptions="Start" HeightRequest="20" WidthRequest="20" />
+                                    <Label Text="Home" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell>
+                                <StackLayout Padding="15,10" Orientation="Horizontal">
+                                    <!--<Image Source="iconHome" HorizontalOptions="Start" HeightRequest="20" WidthRequest="20" />-->
+                                    <Label Text="Outro" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell>
+                                <StackLayout Padding="15,10" Orientation="Horizontal">
+                                    <!--<Image Source="iconHome" HorizontalOptions="Start" HeightRequest="20" WidthRequest="20" />-->
+                                    <Label Text="Outro" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell>
+                                <StackLayout Padding="15,10" Orientation="Horizontal">
+                                    <!--<Image Source="iconHome" HorizontalOptions="Start" HeightRequest="20" WidthRequest="20" />-->
+                                    <Label Text="Outro" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell Tapped="Sair">
+                                <StackLayout Padding="15,10" Orientation="Horizontal">
+                                    <Image Source="iconLogout" HorizontalOptions="Start" HeightRequest="20" WidthRequest="20"/>
+                                    <Label Text="Sair" FontSize="Medium" VerticalTextAlignment="Center" />
+                                </StackLayout>
+                            </ViewCell>
+
+                        </TableSection>
+                        
+                    </TableView>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

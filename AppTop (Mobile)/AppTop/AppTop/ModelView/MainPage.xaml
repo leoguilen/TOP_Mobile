@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppTop"
+             x:Class="AppTop.MainPage"
+             Title="Página de login">
+
+    <StackLayout VerticalOptions="StartAndExpand" 
+                 HorizontalOptions="Center"
+                 BackgroundColor="White"
+                 Padding="35"
+                 HeightRequest="1000"
+                 WidthRequest="1000">
+        <Image Source="LogoNovo" HeightRequest="65"
+               Margin="25"/>
+        
+        <Label Text="Bem vindo"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Fill"
+               FontSize="25"
+               TextColor="#03324c"/>
+        
+        <Label Text="Entre e faça seu teste agora mesmo"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="FillAndExpand"
+               Margin="0"
+               FontSize="15"
+               Opacity="0.6"
+               TextColor="Black"/>
+        
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label x:Name="lblErro" Text="" FontSize="10"/>
+            <Label x:Name="lblUser" Text="Usuario" TextColor="#02151f"/>
+            <Entry x:Name="txtUsername" TextColor="Black" 
+               PlaceholderColor="Black"
+               HorizontalTextAlignment="Center"/>
+
+            <Label x:Name="lblSenha" Text="Senha" TextColor="#02151f"/>
+            <Entry x:Name="txtSenha" TextColor="Black" 
+               PlaceholderColor="Black"
+               HorizontalTextAlignment="Center"
+               IsPassword="True"/>
+        </StackLayout>
+
+        <StackLayout VerticalOptions="StartAndExpand"
+                     HorizontalOptions="EndAndExpand"
+                     Orientation="Horizontal">
+            <Label Text="Lembrar-me" 
+                   VerticalOptions="Center" 
+                   TextColor="Black"
+                   Opacity="0.8"/>
+            <Switch x:Name="switchSalvarUser" 
+                    OnColor="#03324c"
+                    Margin="10"
+                    IsToggled="False"/>
+        </StackLayout>
+
+        <Button x:Name="btnEntrar" 
+                Text="Entrar" 
+                VerticalOptions="StartAndExpand"
+                BackgroundColor="#03324c"
+                TextColor="White"
+                Clicked="BtnEntrar_Clicked"/>
+
+        <Button x:Name="btnCadastro" 
+                Text="Não tenho uma conta" 
+                VerticalOptions="StartAndExpand"
+                BackgroundColor="#03324c"
+                TextColor="White"
+                Clicked="BtnCadastro_Clicked"/>
+
+        <AbsoluteLayout HorizontalOptions="CenterAndExpand">
+            <ActivityIndicator x:Name="loader" Color="Teal"/>
+        </AbsoluteLayout>
+    </StackLayout>
+
+</ContentPage>
