@@ -51,12 +51,10 @@ namespace AppTop
                 {
                     if (retorno)
                     {
-                        //await DisplayAlert("Validação de login", "Logado com sucesso! Bem vindo " + txtUser.ToUpper(), "OK");
                         await Task.Delay(4000);
-
-                        txtSenha.Text = "";
                         await Navigation.PushAsync(new PagePrincipal(txtUser));
 
+                        txtSenha.Text = "";
                         Loader(false);
                         btnCadastro.IsVisible = true;
                         btnEntrar.IsVisible = true;

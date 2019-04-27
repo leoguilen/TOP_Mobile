@@ -20,22 +20,31 @@ namespace AppTop
             user_logado = username;
             
             lblUserLogon.Text += user_logado;
+            
+            if(HttpClientResultado.GetAllResults().Count() > 0)
+            {
+                if (HttpClientUsuario.CheckTest(user_logado) == 0)
+                {
+                    btnStartTest.IsVisible = true;
+                    lblStatus.Text += "Pendente";
+                }
+                else
+                {
+                    btnStartTest.IsVisible = false;
+                    btnIrSite.IsVisible = true;
+                    btnOutroTeste.IsVisible = true;
+                    lblStatus.Text += "Feito";
 
-            if (HttpClientUsuario.CheckTest(user_logado) == 0)
+                    lblUltimoRes.Text += HttpClientResultado.GetResult(user_logado).NomeCurso;
+                    lblUltimoData.Text += string.Format("{0:dd-MM-yyyy}", HttpClientResultado.GetResult(user_logado).DataFim);
+                }
+            }
+            else
             {
                 btnStartTest.IsVisible = true;
                 lblStatus.Text += "Pendente";
             }
-            else
-            {
-                btnStartTest.IsVisible = false;
-                btnIrSite.IsVisible = true;
-                btnOutroTeste.IsVisible = true;
-                lblStatus.Text += "Feito";
-                
-                lblUltimoRes.Text += HttpClientResultado.GetResult(user_logado).NomeCurso;
-                lblUltimoData.Text += string.Format("{0:dd-MM-yyyy}", HttpClientResultado.GetResult(user_logado).DataFim);
-            }
+            
         }
 
         private void BtnStartTest_Clicked(object sender, EventArgs e)
@@ -56,12 +65,22 @@ namespace AppTop
         private void BtnIrSite_Clicked(object sender, EventArgs e)
         {
             //Ir para o site
-            Device.OpenUri(new Uri("http://testetop.localhost:8080/top/"));
+            //Device.OpenUri(new Uri("http://testetop.localhost:8080/top/"));
         }
 
-        private void BtnOutroTeste_Clicked(object sender, EventArgs e)
+        private async void BtnOutroTeste_Clicked(object sender, EventArgs e)
         {
-            //Iniciar novo teste
+            bool newTest = await DisplayAlert("Alerta de novo teste", "Iniciar um novo teste agora?", "Não", "Sim");
+
+            if(newTest)
+            {
+
+            } else
+            {
+
+            }
+
+            await Navigation.PushAsync(new PageResp1(user_logado));
         }
     }
 }

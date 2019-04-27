@@ -56,19 +56,19 @@
                          Padding="5">
                 <StackLayout Orientation="Vertical" HeightRequest="225">
 
-                    <input:CheckBox x:Name="ckResp1" Text="Resposta 1"
+                    <input:CheckBox x:Name="ckResp1" ClassId="1" Text="Resposta 1"
                                     TextColor="#1a1a1a" Type="Material"
                                     Color="Teal"/>
 
-                    <input:CheckBox x:Name="ckResp2" Text="Resposta 2"
+                    <input:CheckBox x:Name="ckResp2" ClassId="2" Text="Resposta 2"
                                     TextColor="#1a1a1a" Type="Material"
                                     Color="Teal"/>
 
-                    <input:CheckBox x:Name="ckResp3" Text="Resposta 3"
+                    <input:CheckBox x:Name="ckResp3" ClassId="3" Text="Resposta 3"
                                     TextColor="#1a1a1a" Type="Material"
                                     Color="Teal"/>
 
-                    <input:CheckBox x:Name="ckResp4" Text="Resposta 4"
+                    <input:CheckBox x:Name="ckResp4" ClassId="4" Text="Resposta 4"
                                     TextColor="#1a1a1a" Type="Material"
                                     Color="Teal"/>
 
@@ -77,33 +77,15 @@
 
             <!--Barra de Navegação entre as perguntas-->
             <StackLayout Orientation="Horizontal" 
-                     VerticalOptions="EndAndExpand"
-                     BackgroundColor="Teal"
-                     HeightRequest="55">
-
-                <Image Source="iconPrevious" HeightRequest="20" 
-                   WidthRequest="20" 
-                   HorizontalOptions="Center"
-                   Margin="10"/>
-                <Button Text="Voltar" 
-                        HorizontalOptions="StartAndExpand"
-                        Margin="-25,0,0,0"
-                        BackgroundColor="Teal"
-                        TextColor="White"
-                        BorderColor="Transparent"
-                        Clicked="Voltar_Clicked"/>
-
+                     VerticalOptions="CenterAndExpand"
+                     BackgroundColor="Teal">
+              
                 <Button Text="Próximo" 
-                        HorizontalOptions="EndAndExpand"
-                        Margin="0,0,-25,0"
+                        HorizontalOptions="FillAndExpand"
                         BackgroundColor="Teal"
                         TextColor="White"
                         BorderColor="Transparent"
                         Clicked="Prox_Clicked"/>
-                <Image Source="iconNext" 
-                   WidthRequest="20"
-                    Margin="10"/>
-
             </StackLayout>
 
 

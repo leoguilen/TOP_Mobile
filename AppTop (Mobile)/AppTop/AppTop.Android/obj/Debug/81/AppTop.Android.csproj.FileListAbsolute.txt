@@ -340,8 +340,6 @@ C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\res\drawable\iconerrowifi.png
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\res\drawable-hdpi\iconerrowifi.png
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\res\drawable-xhdpi\iconerrowifi.png
-C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.dll
-C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\bin\Debug\AppTop.dll.mdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\AppTop.dll.mdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\Plugin.Connectivity.dll.mdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\Plugin.LocalNotifications.dll.mdb
