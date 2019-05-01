@@ -1,29 +1,42 @@
 ﻿using AppTop.Model;
-using AppTop.ModelView;
 using Plugin.LocalNotifications;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
+using Xamarin.Essentials;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Collections.Generic;
 
 namespace AppTop
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PageCadastro : ContentPage
 	{
 		public PageCadastro ()
 		{
 			InitializeComponent ();
-		}
+
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
 
         public async void Loader(bool sts)
         {
             loader.IsRunning = sts;
+        }
+
+        public async Task EnviarEmail(string assunto,string corpo, List<string> recebedores )
+        {
+            var message = new EmailMessage
+            {
+                BodyFormat = EmailBodyFormat.PlainText,
+                Body = corpo,
+                Subject = assunto,
+                To = recebedores,
+                
+            };
+
+            await Email.ComposeAsync(message);
         }
 
         public void ErroEntradaCadastro(Entry e,Label l,Label err,string erro_campo)
@@ -118,7 +131,7 @@ namespace AppTop
                     break;
             }
 
-            us.DataNascimento = string.Format("{0:yyyy-MM-dd}",dtPicDtNasc.Date);
+            us.DataNascimento = string.Format("{0:yyyy-MM-dd}", dtPicDtNasc.Date);
             us.Username = txtUsername.Text;
             us.Senha = txtSenha.Text;
             us.Cidade = txtCidade.Text;
@@ -126,20 +139,20 @@ namespace AppTop
             us.NivelAcademico = pckNivel.SelectedIndex;
             string cel = string.Format("{0: (##) #####-####}", txtCel.Text);
 
-            var t = Task.Run(() =>HttpClientUsuario.NewUser(us,txtEmail.Text,cel));
+            var t = Task.Run(() => HttpClientUsuario.NewUser(us, txtEmail.Text, cel));
             bool valid = t.Result;
 
             if (valid)
             {
                 await Task.Delay(4000);
-                
+
                 await DisplayAlert("Sucesso", "Seu cadastro foi efetuado com sucesso", "Ok, Vamos lá");
                 Random rand = new Random(DateTime.Now.Millisecond);
                 int codConfirma = rand.Next(1000, 9999);
 
-                await Navigation.PushAsync(new PageValidaCadastro(txtUsername.Text,codConfirma));
-                CrossLocalNotifications.Current.Show("Código de validação", "O código de confirmação para seu cadastro é " + codConfirma);
-
+                await Navigation.PushAsync(new PageValidaCadastro(txtUsername.Text, codConfirma));
+                CrossLocalNotifications.Current.Show("Código de confirmação", codConfirma + " esse é seu código para confirmar o seu cadastro",0, DateTime.Now);
+                
                 Loader(false);
                 btnCadastrar.IsVisible = true;
                 LimparCampos();
@@ -150,7 +163,7 @@ namespace AppTop
 
                 loader.IsRunning = false;
                 btnCadastrar.IsVisible = true;
-                
+
                 await DisplayAlert("Erro", "Seu cadastro não foi efetuado!", "Tentar novamente");
                 ErroCad();
             }

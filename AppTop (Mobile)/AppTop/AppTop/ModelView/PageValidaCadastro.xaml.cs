@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,7 +21,10 @@ namespace AppTop
 			InitializeComponent ();
             user_logado = username;
             Cod_Verifica = cod;
-		}
+
+            Vibration.Vibrate(TimeSpan.FromMilliseconds(250));
+
+        }
 
         private async void Validar_Clicked(object sender, EventArgs e)
         {

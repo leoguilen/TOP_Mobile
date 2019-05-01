@@ -38,7 +38,7 @@ namespace AppTop
             lblSts.TextColor = Color.Green;
 
             //Calculo para a conclusao em porcentagem
-            int numTotalQuestoes = HttpClientPergunta.GetAllQuestions().Count() - 1;
+            int numTotalQuestoes = HttpClientPergunta.GetAllQuestions().Count() - 2;
             double percPorQuestao = (numPagina * 100) / numTotalQuestoes;
             lblPerc.Text = percPorQuestao + "%";
 
@@ -96,6 +96,7 @@ namespace AppTop
                 var result = await DisplayAlert("Alerta", "Deseja mesmo encerrar o teste?\n" + aviso, "Sim", "Não");
                 if (result)
                 {
+                    HttpClientTeste.CancelTest(user_logado);
                     await Navigation.PushAsync(new PagePrincipalDetail(user_logado));
                 }
                 else
@@ -149,7 +150,7 @@ namespace AppTop
                                 _listValoresExatas.Add(Math.Round(_listResps[0].ValorExatas,2));
                                 _listValoresHumanas.Add(Math.Round(_listResps[0].ValorHumanas,2));
                                 _listValoresBiologicas.Add(Math.Round(_listResps[0].ValorBiologicas,2));
-                                await DisplayAlert("INFORMAÇÃO", string.Format("Exatas: {0} - Humanas: {1} - Biologicas: {2}", _listValoresExatas[0], _listValoresHumanas[0], _listValoresBiologicas[0]),"OK");
+                                //await DisplayAlert("INFORMAÇÃO", string.Format("Exatas: {0} - Humanas: {1} - Biologicas: {2}", _listValoresExatas[0], _listValoresHumanas[0], _listValoresBiologicas[0]),"OK");
                                 break;
                             }
                         case "2":
@@ -157,7 +158,7 @@ namespace AppTop
                                 _listValoresExatas.Add(Math.Round(_listResps[1].ValorExatas, 2));
                                 _listValoresHumanas.Add(Math.Round(_listResps[1].ValorHumanas, 2));
                                 _listValoresBiologicas.Add(Math.Round(_listResps[1].ValorBiologicas, 2));
-                                await DisplayAlert("INFORMAÇÃO", string.Format("Exatas: {0} - Humanas: {1} - Biologicas: {2}", _listValoresExatas[0], _listValoresHumanas[0], _listValoresBiologicas[0]), "OK");
+                                //await DisplayAlert("INFORMAÇÃO", string.Format("Exatas: {0} - Humanas: {1} - Biologicas: {2}", _listValoresExatas[0], _listValoresHumanas[0], _listValoresBiologicas[0]), "OK");
                                 break;
                             }
                         case "3":
@@ -165,7 +166,7 @@ namespace AppTop
                                 _listValoresExatas.Add(Math.Round(_listResps[2].ValorExatas, 2));
                                 _listValoresHumanas.Add(Math.Round(_listResps[2].ValorHumanas, 2));
                                 _listValoresBiologicas.Add(Math.Round(_listResps[2].ValorBiologicas, 2));
-                                await DisplayAlert("INFORMAÇÃO", string.Format("Exatas: {0} - Humanas: {1} - Biologicas: {2}", _listValoresExatas[0], _listValoresHumanas[0], _listValoresBiologicas[0]), "OK");
+                                //await DisplayAlert("INFORMAÇÃO", string.Format("Exatas: {0} - Humanas: {1} - Biologicas: {2}", _listValoresExatas[0], _listValoresHumanas[0], _listValoresBiologicas[0]), "OK");
                                 break;
                             }
                         case "4":
@@ -173,7 +174,7 @@ namespace AppTop
                                 _listValoresExatas.Add(Math.Round(_listResps[3].ValorExatas, 2));
                                 _listValoresHumanas.Add(Math.Round(_listResps[3].ValorHumanas, 2));
                                 _listValoresBiologicas.Add(Math.Round(_listResps[3].ValorBiologicas, 2));
-                                await DisplayAlert("INFORMAÇÃO", string.Format("Exatas: {0} - Humanas: {1} - Biologicas: {2}", _listValoresExatas[0], _listValoresHumanas[0], _listValoresBiologicas[0]), "OK");
+                                //await DisplayAlert("INFORMAÇÃO", string.Format("Exatas: {0} - Humanas: {1} - Biologicas: {2}", _listValoresExatas[0], _listValoresHumanas[0], _listValoresBiologicas[0]), "OK");
                                 break;
                             }
                         default:
@@ -195,6 +196,7 @@ namespace AppTop
 
             if (voltar)
             {
+                HttpClientTeste.CancelTest(user_logado);
                 await Navigation.PushAsync(new PagePrincipal(user_logado));
             }
             else

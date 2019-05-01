@@ -8,7 +8,8 @@ namespace AppTop.Model
 {
     public static class HttpClientResultado
     {
-        private readonly static string addressBase = "http://192.168.0.5/";
+        //private readonly static string addressBase = "http://192.168.43.108/"; REDE TIM
+        private readonly static string addressBase = "http://192.168.0.5/"; //REDE CASA
 
         public static HttpClient Configurar()
         {
@@ -45,9 +46,9 @@ namespace AppTop.Model
             return _listResult;
         }
 
-        public static Resultado GetResult(string username)
+        public static IEnumerable<Resultado> GetResult(string username)
         {
-            Resultado result = null;
+            List<Resultado> _listResult = new List<Resultado>();
 
             using (HttpClient client = Configurar())
             {
@@ -55,12 +56,18 @@ namespace AppTop.Model
 
                 if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
                 {
-                    var resposta = client.GetStringAsync("api/resultado/TrazerResultado/" + username).Result;
-                    Resultado re = JsonConvert.DeserializeObject<Resultado>(resposta); //Converte o resultado em classes usuario
-                    result = re;
+                    var resposta = client.GetStringAsync("api/resultado/TrazerResultado/"+username).Result;
+                    Resultado[] re = JsonConvert.DeserializeObject<Resultado[]>(resposta); //Converte o resultado em classes usuario
+
+                    foreach (var itemResp in re)
+                    {
+                        _listResult.Add(itemResp);
+                    }
+
                 }
             }
-            return result;
+
+            return _listResult;
         }
     }
 }

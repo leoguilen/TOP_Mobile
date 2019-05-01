@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XamlProjectMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Files>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\App.xaml</FilePath>
+      <Hash>9A-D1-89-A5-A4-05-CF-A6-E9-4C-C9-23-68-0C-5F-50</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\MainPage.xaml</FilePath>
+      <Hash>0D-2D-47-12-B9-A1-13-8F-74-AD-C8-7B-E1-84-A4-D2</Hash>
+      <Properties>
+        <string>Title</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageCadastro.xaml</FilePath>
+      <Hash>8D-9E-AD-A8-2E-47-B4-DD-EB-D2-F8-A5-57-E4-DC-AF</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageErroNet.xaml</FilePath>
+      <Hash>F3-DB-31-6E-75-98-C2-09-5F-5B-DF-1F-65-CE-83-31</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageMeusTestes.xaml</FilePath>
+      <Hash>C7-AE-45-BC-8E-0D-E7-D8-C4-6B-A6-57-DD-01-5E-59</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PagePrincipal.xaml</FilePath>
+      <Hash>7D-33-7B-2A-73-49-F4-5E-06-43-24-5B-C1-FD-3A-42</Hash>
+      <Properties>
+        <string>Title</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PagePrincipalDetail.xaml</FilePath>
+      <Hash>FB-B5-06-5F-E8-F9-8F-9E-C6-9E-6F-61-1F-02-54-EF</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageResp1.xaml</FilePath>
+      <Hash>27-D1-1A-BE-08-F9-1B-CC-53-38-BF-1D-CD-E1-EC-61</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageResp10.xaml</FilePath>
+      <Hash>C7-AD-6B-53-84-97-97-15-38-37-E6-C5-6A-21-FA-61</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageResp2.xaml</FilePath>
+      <Hash>2C-84-6D-36-40-B6-C5-6E-4B-B4-89-50-3E-DA-77-45</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageResp3.xaml</FilePath>
+      <Hash>99-2E-DC-75-E1-68-05-39-52-CD-41-EB-66-24-A7-A5</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageResp4.xaml</FilePath>
+      <Hash>B0-69-81-AA-BA-D7-CF-54-89-B3-5F-80-39-D2-62-2D</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageResp5.xaml</FilePath>
+      <Hash>23-4D-97-2B-7B-BA-44-BD-47-11-3A-EC-62-E6-BD-20</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageResp6.xaml</FilePath>
+      <Hash>73-D2-21-52-F6-73-40-F5-02-0D-AD-A0-B8-4D-D4-B0</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageResp7.xaml</FilePath>
+      <Hash>69-3F-01-8C-17-92-7E-77-52-5B-3A-22-EA-61-59-6A</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageResp8.xaml</FilePath>
+      <Hash>56-6E-85-AC-3D-FF-25-E4-B0-4D-F7-92-E4-E2-14-06</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageResp9.xaml</FilePath>
+      <Hash>31-6E-1C-1A-64-64-C1-C8-CB-0B-51-BA-60-4A-47-86</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageResultadoFinal.xaml</FilePath>
+      <Hash>27-EC-33-7B-34-F5-88-4E-6E-A6-73-10-3E-64-4A-B3</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\ModelView\PageValidaCadastro.xaml</FilePath>
+      <Hash>97-B1-C6-10-90-B7-A7-64-60-22-6D-BB-8B-26-4F-AB</Hash>
+      <Properties />
+    </XamlFileMeta>
+  </Files>
+</XamlProjectMeta>

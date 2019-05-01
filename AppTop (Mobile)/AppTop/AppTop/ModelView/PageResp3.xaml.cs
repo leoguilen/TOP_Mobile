@@ -41,7 +41,7 @@ namespace AppTop.ModelView
             lblSts.TextColor = Color.Green;
 
             //Calculo para a conclusao em porcentagem
-            int numTotalQuestoes = HttpClientPergunta.GetAllQuestions().Count() - 1;
+            int numTotalQuestoes = HttpClientPergunta.GetAllQuestions().Count() - 2;
             double percPorQuestao = (numPagina * 100) / numTotalQuestoes;
             lblPerc.Text = percPorQuestao + "%";
 
@@ -92,35 +92,7 @@ namespace AppTop.ModelView
 
             return valid;
         }
-
-        public List<double> CalcularResultadosDasRespostas(List<double> valoresExatas, List<double> valoresHumanas, List<double> valoresBio)
-        {
-            List<double> _listResultadosFinal = new List<double>();
-            double resultadoExatas = 0, resultadoHumanas = 0, resultadoBiologicas = 0;
-
-            foreach (double valueE in valoresExatas)
-            {
-                resultadoExatas += valueE;
-            }
-
-            foreach (double valueH in valoresHumanas)
-            {
-                resultadoHumanas += valueH;
-            }
-
-            foreach (double valueB in valoresBio)
-            {
-                resultadoBiologicas += valueB;
-            }
-
-            _listResultadosFinal.Add((resultadoExatas / 3) * 100);
-            _listResultadosFinal.Add((resultadoHumanas / 3) * 100);
-            _listResultadosFinal.Add((resultadoBiologicas / 3) * 100);
-
-            return _listResultadosFinal;
-
-        }
-
+        
         protected override bool OnBackButtonPressed()
         {
             string aviso = "Se voltar o seu progresso será perdido!".ToUpper();
@@ -129,6 +101,7 @@ namespace AppTop.ModelView
                 var result = await DisplayAlert("Alerta", "Deseja mesmo encerrar o teste?\n" + aviso, "Sim", "Não");
                 if (result)
                 {
+                    HttpClientTeste.CancelTest(user_logado);
                     await Navigation.PushAsync(new PagePrincipalDetail(user_logado));
                 }
                 else
@@ -213,18 +186,10 @@ namespace AppTop.ModelView
                             break;
                     }
                 }
-
-                 List<double> verResultado = CalcularResultadosDasRespostas(_listValoresExatas,_listValoresHumanas,_listValoresBiologicas);
-
-                await DisplayAlert("Resultado Parcial", string.Format("TOTAIS = Exatas: {0} - Humanas: {1} - Biologicas: {2}", verResultado[0],verResultado[1],verResultado[2] ),"OK");
-
-                //await Navigation.PushAsync(new PageResp2(user_logado, _listValoresExatas, _listValoresHumanas, _listValoresBiologicas));
+                
+                await Navigation.PushAsync(new PageResp4(user_logado,_listValoresExatas,_listValoresHumanas,_listValoresBiologicas));
             }
         }
-
-        private async void Voltar_Clicked(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

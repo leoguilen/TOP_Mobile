@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppTop.Model;
+using AppTop.ModelView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +19,7 @@ namespace AppTop
 		public PagePrincipal (string username)
 		{
 			InitializeComponent ();
-
+            
             user_logado = username;
 
             Detail = new NavigationPage(new PagePrincipalDetail(user_logado));
@@ -26,9 +28,9 @@ namespace AppTop
             lblTitleMenu.Text = "Olá, " + user_logado.ToUpper();
         }
 
-        private void Home(object sender, System.EventArgs e)
+        private async void Home(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new PagePrincipal(user_logado));
+            Detail = new NavigationPage(new PagePrincipal(user_logado));
             IsPresented = false;
         }
 
@@ -43,6 +45,21 @@ namespace AppTop
             } else
             {
                 return;
+            }
+            
+        }
+
+        private void MeuTeste_Tapped(object sender, EventArgs e)
+        {
+            if(HttpClientResultado.GetResult(user_logado).Count() == 0)
+            {
+                Detail = new NavigationPage(new PageSemTeste());
+                IsPresented = false;
+            }
+            else
+            {
+                Detail = new NavigationPage(new PageMeusTestes(user_logado));
+                IsPresented = false;
             }
             
         }

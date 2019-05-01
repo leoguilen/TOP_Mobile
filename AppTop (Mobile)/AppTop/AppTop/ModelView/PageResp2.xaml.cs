@@ -41,7 +41,7 @@ namespace AppTop.ModelView
             lblSts.TextColor = Color.Green;
 
             //Calculo para a conclusao em porcentagem
-            int numTotalQuestoes = HttpClientPergunta.GetAllQuestions().Count() - 1;
+            int numTotalQuestoes = HttpClientPergunta.GetAllQuestions().Count() - 2;
             double percPorQuestao = (numPagina * 100) / numTotalQuestoes;
             lblPerc.Text = percPorQuestao + "%";
 
@@ -101,6 +101,7 @@ namespace AppTop.ModelView
                 var result = await DisplayAlert("Alerta", "Deseja mesmo encerrar o teste?\n" + aviso, "Sim", "Não");
                 if (result)
                 {
+                    HttpClientTeste.CancelTest(user_logado);
                     await Navigation.PushAsync(new PagePrincipalDetail(user_logado));
                 }
                 else

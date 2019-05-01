@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTop.ModelView.PageResp4">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+
+            <!--Barra de informações do usuario-->
+            <StackLayout Orientation="Horizontal"
+                     BackgroundColor="#969696"
+                     HeightRequest="40">
+                <Image Source="iconUser" 
+                   BackgroundColor="Teal"
+                   WidthRequest="50"/>
+                <Label x:Name="lblUser" Text="Usuário: " 
+                   VerticalOptions="CenterAndExpand" 
+                   TextColor="White"/>
+                <Label x:Name="lblSts"  Text="" 
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                   TextColor="White"/>
+            </StackLayout>
+
+            <!--Detalhes do andamento do teste-->
+            <StackLayout BackgroundColor="WhiteSmoke" 
+                     HeightRequest="140"
+                     Orientation="Vertical"
+                     Padding="15"
+                     HorizontalOptions="FillAndExpand">
+                <Label x:Name="lblPerc" Text="0%" 
+                   FontSize="55"
+                   HorizontalTextAlignment="Center"
+                       TextColor="#808080"/>
+                <Label x:Name="lblTotalPerg" Text="0/0" 
+                   FontSize="25"
+                   HorizontalTextAlignment="Center"
+                       TextColor="#808080"/>
+            </StackLayout>
+
+            <!--Pergunta-->
+            <StackLayout BackgroundColor="WhiteSmoke" 
+                         HeightRequest="40"
+                         Padding="10">
+                <Label x:Name="lblPerg" Text="" 
+                       TextColor="#1a1a1a"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       FontAttributes="Bold" FontSize="Medium"/>
+            </StackLayout>
+
+            <!--Respostas-->
+            <StackLayout VerticalOptions="FillAndExpand" 
+                         BackgroundColor="WhiteSmoke"
+                         Padding="5">
+                <StackLayout Orientation="Vertical" HeightRequest="225">
+
+                    <input:CheckBox x:Name="ckResp1" ClassId="1" Text="Resposta 1"
+                                    TextColor="#1a1a1a" Type="Material"
+                                    Color="Teal"/>
+
+                    <input:CheckBox x:Name="ckResp2" ClassId="2" Text="Resposta 2"
+                                    TextColor="#1a1a1a" Type="Material"
+                                    Color="Teal"/>
+
+                    <input:CheckBox x:Name="ckResp3" ClassId="3" Text="Resposta 3"
+                                    TextColor="#1a1a1a" Type="Material"
+                                    Color="Teal"/>
+
+                    <input:CheckBox x:Name="ckResp4" ClassId="4" Text="Resposta 4"
+                                    TextColor="#1a1a1a" Type="Material"
+                                    Color="Teal"/>
+
+                </StackLayout>
+            </StackLayout>
+
+            <!--Barra de Navegação entre as perguntas-->
+            <StackLayout Orientation="Horizontal" 
+                     VerticalOptions="CenterAndExpand"
+                     BackgroundColor="Teal">
+              
+                <Button Text="Próximo" 
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="Teal"
+                        TextColor="White"
+                        BorderColor="Transparent"
+                        Clicked="Prox_Clicked"/>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

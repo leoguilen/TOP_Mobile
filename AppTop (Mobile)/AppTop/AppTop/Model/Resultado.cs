@@ -60,5 +60,14 @@ namespace AppTop.Model
 
         [JsonProperty(PropertyName = "NotaMEC")]
         public int NotaMEC { get; set; }
+
+        [JsonProperty(PropertyName = "NovoTeste")]
+        public byte NovoTeste { get; set; }
+
+        public bool Isvisible { get; set; }
+
+        public bool IsvisibleDown { get; set; }
+
+        public bool IsvisibleUp { get; set; }
     }
 }

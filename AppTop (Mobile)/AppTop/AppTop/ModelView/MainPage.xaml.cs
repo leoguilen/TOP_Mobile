@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using AppTop.Model;
-using System.ComponentModel;
-using System.Threading;
+using System.IO;
 
 namespace AppTop
 {
@@ -17,10 +13,45 @@ namespace AppTop
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
-        
+
+        private string caminho = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "remember_login.txt");
+
+
         public async void Loader(bool sts)
         {
             loader.IsRunning = sts;
+        }
+
+        private void ContentPage_Appearing(object sender, EventArgs e)
+        {
+            if (!File.Exists(caminho))
+            {
+                File.Create(caminho);
+            }
+            else
+            {
+                string text = File.ReadAllText(caminho);
+
+                if(text != "")
+                {
+                    string[] credenciais = text.Split('/');
+
+                    txtUsername.Text = credenciais[0];
+                    txtSenha.Text = credenciais[1];
+                    switchSalvarlogin.IsToggled = bool.Parse(credenciais[2]);
+                }
+            }
+        }
+
+        private void SwitchSalvarlogin_Toggled(object sender, ToggledEventArgs e)
+        {
+            if(switchSalvarlogin.IsToggled)
+            {
+                File.WriteAllText(caminho, txtUsername.Text + "/" + txtSenha.Text + "/" + switchSalvarlogin.IsToggled);
+            } else
+            {
+                File.WriteAllText(caminho, "");
+            }
         }
 
         private async void BtnEntrar_Clicked(object sender, EventArgs e)

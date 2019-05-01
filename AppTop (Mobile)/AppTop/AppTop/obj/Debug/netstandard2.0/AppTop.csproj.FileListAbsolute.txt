@@ -30,7 +30,6 @@ C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\bin\Debug\n
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.dll
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.pdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.csprojAssemblyReference.cache
-C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\MainPage.xaml.g.cs
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageCadastro.xaml.g.cs
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PagePrincipal.xaml.g.cs
@@ -48,5 +47,16 @@ C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\bin\Debug\n
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.csproj.CopyComplete
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageValidaCadastro.xaml.g.cs
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageErroNet.xaml.g.cs
-C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp3.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResultadoFinal.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp10.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp4.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp5.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp6.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp7.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp8.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp9.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageMeusTestes.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageSemTeste.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\XamlC.stamp

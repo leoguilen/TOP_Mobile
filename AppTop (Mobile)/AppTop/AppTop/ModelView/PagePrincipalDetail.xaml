@@ -30,13 +30,13 @@
                          Padding="20">
 
                     <Label x:Name="lblStatus" Text="Status do teste: "
-                       FontAttributes="Bold" TextColor="Teal"
+                       FontAttributes="Bold" TextColor="#03324c"
                        HorizontalTextAlignment="Center"
                        VerticalOptions="FillAndExpand"
                        FontSize="20"/>
                 </StackLayout>
 
-                <StackLayout BackgroundColor="Teal"
+                <StackLayout BackgroundColor="#03324c"
                          VerticalOptions="FillAndExpand"
                          HorizontalOptions="FillAndExpand"
                          Padding="10">
@@ -53,29 +53,29 @@
                        FontSize="15"  TextColor="Gainsboro"/>
                 </StackLayout>
             </StackLayout>
-            
-            <Button x:Name="btnStartTest" Text="Começar teste" BackgroundColor="Teal"
-                    VerticalOptions="CenterAndExpand" TextColor="White"
-                    HorizontalOptions="CenterAndExpand"
-                    WidthRequest="150" IsVisible="False"
-                    Clicked="BtnStartTest_Clicked"/>
-            
+
             <StackLayout Orientation="Vertical" 
                          VerticalOptions="StartAndExpand"
                          HorizontalOptions="FillAndExpand"
                          Padding="35">
-                
-                <Button x:Name="btnIrSite" Text="Ver resultado no site" BackgroundColor="Teal"
-                    HorizontalOptions="CenterAndExpand" TextColor="White"
+
+                <Button x:Name="btnStartTest" Text="Começar teste" BackgroundColor="#03324c"
+                    VerticalOptions="CenterAndExpand" TextColor="White"
+                    HorizontalOptions="FillAndExpand"
+                    WidthRequest="150" IsVisible="False"
+                    Clicked="BtnStartTest_Clicked"/>
+
+                <Button x:Name="btnIrSite" Text="Ver resultado no site" BackgroundColor="#03324c"
+                    HorizontalOptions="FillAndExpand" TextColor="White"
                     WidthRequest="150" IsVisible="False"
                     Clicked="BtnIrSite_Clicked"/>
-                
-                <Button x:Name="btnOutroTeste" Text="Fazer outro teste" BackgroundColor="Teal"
-                    HorizontalOptions="CenterAndExpand" TextColor="White"
+
+                <Button x:Name="btnOutroTeste" Text="Fazer outro teste" BackgroundColor="#03324c"
+                    HorizontalOptions="FillAndExpand" TextColor="White"
                     WidthRequest="150" IsVisible="False"
                     Clicked="BtnOutroTeste_Clicked"/>
             </StackLayout>
-            
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

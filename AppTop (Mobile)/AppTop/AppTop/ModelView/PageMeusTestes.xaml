@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppTop.ModelView"
+             x:Class="AppTop.ModelView.PageMeusTestes">
+
+    <ContentPage.BindingContext>
+        <local:TestesListView/>
+    </ContentPage.BindingContext>
+    <ScrollView>
+      <ListView Margin="0,0,0,0"
+                ItemTapped="ListViewItem_Tabbed"
+                ItemsSource="{Binding resultados}"
+                HasUnevenRows="True"
+                SelectionMode="None"
+                BackgroundColor="WhiteSmoke"
+                SeparatorVisibility="Default"
+                SeparatorColor="#03324c">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Padding="20">
+                <StackLayout Orientation="Horizontal" Padding="0,0,0,7">
+                  <Label Text="{Binding Username, StringFormat='Teste do usuário: {0}'}"
+                 FontSize="Default"
+                 TextColor="#03324c"
+                 FontAttributes="Bold"/>
+
+                  <Image x:Name="setaBaixo" Source="setaBaixo"
+                     HeightRequest="25"
+                     WidthRequest="25" IsVisible="{Binding IsvisibleDown}"
+                     HorizontalOptions="EndAndExpand"/>
+
+                  <Image x:Name="setaCima" Source="setaCima"
+                     HeightRequest="25"
+                     WidthRequest="25" IsVisible="{Binding IsvisibleUp}"
+                     HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+
+                <StackLayout IsVisible="{Binding Isvisible}"
+                             Orientation="Vertical"
+                             Margin="-20,0,-20,0"
+                             BackgroundColor="WhiteSmoke"
+                             HeightRequest="176">
+
+                  <StackLayout HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand"
+                               BackgroundColor="Gainsboro"
+                               Padding="15" Orientation="Vertical">
+
+                    <StackLayout Orientation="Horizontal" Padding="8">
+
+                      <Image Source="LogoNovo"
+                             HeightRequest="35"
+                             WidthRequest="35" Margin="-10"/>
+
+                      <Label x:Name="lblData" Text="{Binding DataFim, StringFormat='Data: {0}'}"
+                             TextColor="Black"
+                             FontAttributes="Bold"
+                             FontSize="Default"
+                             HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+
+                    <Label x:Name="lblResult" Text="{Binding NomeCurso, StringFormat='Resultado: {0}'}"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   FontSize="Default"
+                   HorizontalOptions="StartAndExpand"/>
+
+                    <Label x:Name="lblArea" Text="{Binding DescArea, StringFormat='Area de destaque: {0}'}"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   FontSize="Default"
+                   HorizontalOptions="StartAndExpand"/>
+
+                    <Label Text="Combatibilidades:"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="Default"
+                       HorizontalOptions="StartAndExpand"/>
+
+                    <StackLayout Orientation="Horizontal">
+                      <Label x:Name="lblExa" Text="{Binding ResultadoExatas, StringFormat='EXATAS: {0}%'}"
+                         TextColor="Black"
+                         FontAttributes="Bold"
+                         FontSize="Default"
+                         HorizontalOptions="CenterAndExpand"/>
+
+                      <Label x:Name="lblHum" Text="{Binding ResultadoHumanas, StringFormat='HUMANAS: {0}%'}"
+                         TextColor="Black"
+                         FontAttributes="Bold"
+                         FontSize="Default"
+                         HorizontalOptions="CenterAndExpand"/>
+
+                      <Label x:Name="lblBio" Text="{Binding ResultadoBiologicas, StringFormat='BIOLÓGICAS: {0}%'}"
+                         TextColor="Black"
+                         FontAttributes="Bold"
+                         FontSize="Default"
+                         HorizontalOptions="CenterAndExpand"/>
+
+                      <Button Text="OK"/>
+                    </StackLayout>
+                  </StackLayout>
+                </StackLayout>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </ScrollView>
+</ContentPage>

@@ -9,7 +9,8 @@ namespace AppTop.Model
 {
     public class HttpClientUsuario
     {
-        private readonly static string addressBase = "http://192.168.0.5/";
+        //private readonly static string addressBase = "http://192.168.43.108/"; REDE TIM
+        private readonly static string addressBase = "http://192.168.0.5/"; //REDE CASA
 
         public static HttpClient Configurar()
         {
@@ -104,5 +105,26 @@ namespace AppTop.Model
             else
                 return false;
         }
+
+        public static int ReturnUserId(string user_logado)
+        {
+            int id_user = 0;
+
+            using (HttpClient client = Configurar())
+            {
+                HttpResponseMessage resp = client.GetAsync("api/usuario/PegarIDUsuario/"+user_logado).Result; //Aqui faz primeira consulta
+
+                if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
+                {
+                    var resposta = client.GetStringAsync("api/usuario/PegarIDUsuario/"+user_logado).Result;
+                    Usuario us = JsonConvert.DeserializeObject<Usuario>(resposta); //Converte o resultado em classes usuario
+                    id_user = us.ID;
+                }
+            }
+
+            return id_user;
+        }
+
+
     }
 }
