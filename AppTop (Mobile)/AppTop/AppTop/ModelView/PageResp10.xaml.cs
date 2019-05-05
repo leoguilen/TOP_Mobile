@@ -216,10 +216,9 @@ namespace AppTop.ModelView
                 }
 
                  List<double> verResultado = CalcularResultadosDasRespostas(_listValoresExatas,_listValoresHumanas,_listValoresBiologicas);
-
-                await DisplayAlert("Resultado Parcial", string.Format("TOTAIS = Exatas: {0} - Humanas: {1} - Biologicas: {2}", verResultado[0], verResultado[1], verResultado[2]), "OK");
+                
                 await HttpClientResultadoTeste.CalculateCompatibility(user_logado, verResultado[0], verResultado[1], verResultado[2]);
-                await Navigation.PushAsync(new PageResultadoFinal(user_logado));
+                await Navigation.PushAsync(new PageCalcularResultado(user_logado));
             }
         }
         

@@ -25,9 +25,11 @@ namespace AppTop.ModelView
 
             Resultado result = HttpClientResultado.GetResult(user_logado).FirstOrDefault();
 
-            lblResultado.Text = "O seu resultado é " + result.NomeCurso;
-            lblResultado.FontSize = 35;
-            lblResultado.FontAttributes = FontAttributes.Bold;
+            lblResultado.Text += result.NomeCurso;
+            lblExa.Text += result.ResultadoExatas + "%";
+            lblBio.Text += result.ResultadoBiologicas + "%";
+            lblHum.Text += result.ResultadoHumanas + "%";
+            imgCurso.Source = result.ImagemCurso;
 		}
 
         protected override bool OnBackButtonPressed()

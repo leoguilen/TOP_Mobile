@@ -3,13 +3,61 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTop.ModelView.PageResultadoFinal">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" 
-                     HorizontalOptions="CenterAndExpand"  >
-            <Label x:Name="lblResultado" HorizontalTextAlignment="Center"/>
-            <Button Text="Ir para página principal" 
+        <StackLayout VerticalOptions="FillAndExpand" 
+                 HorizontalOptions="FillAndExpand"
+                 BackgroundColor="WhiteSmoke" Padding="15">
+            <StackLayout VerticalOptions="StartAndExpand" 
+                         HorizontalOptions="StartAndExpand"
+                         BackgroundColor="Gainsboro" Padding="10" Orientation="Horizontal">
+                <Image Source="iconConfirm" HeightRequest="25" WidthRequest="30"/>
+                <Label Text="LGUILEN, aqui estão alguns detalhes do seu teste..." 
+                       FontSize="Medium" TextColor="Teal" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="StartAndExpand">
+                <StackLayout Orientation="Horizontal" 
+                         HeightRequest="80">
+
+                    <Label x:Name="lblExa" Text="Exatas: " HorizontalOptions="FillAndExpand"
+                       TextColor="White" FontAttributes="Bold"
+                       FontSize="Large" HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       BackgroundColor="CadetBlue"/>
+
+                    <Label x:Name="lblHum" Text="Humanas: " HorizontalOptions="FillAndExpand"
+                       TextColor="White" FontAttributes="Bold"
+                       FontSize="Large" HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       BackgroundColor="CadetBlue"/>
+
+                    <Label x:Name="lblBio" Text="Biológicas: " HorizontalOptions="FillAndExpand"
+                       TextColor="White" FontAttributes="Bold"
+                       FontSize="Large" HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       BackgroundColor="CadetBlue"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" 
+                     HorizontalOptions="CenterAndExpand" Margin="0,0,0,200">
+                
+                <Label x:Name="lblResultado" BackgroundColor="Teal"
+                       HorizontalTextAlignment="Center" FontSize="Large" 
+                       TextColor="White" Text="Maior Compatibilidade: " 
+                       FontAttributes="Bold" Margin="0,0,0,20" 
+                       HeightRequest="70" WidthRequest="500" VerticalTextAlignment="Center"/>
+
+                <Image x:Name="imgCurso"/>
+
+                <Button Text="Ir para página principal" 
                     BackgroundColor="Teal" 
-                    TextColor="White"
+                    TextColor="White" VerticalOptions="EndAndExpand"
                     Clicked="Button_Clicked"/>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="EndAndExpand"
+                     VerticalOptions="EndAndExpand">
+                <Image Source="LogoNovo" HeightRequest="45" WidthRequest="45"/>
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

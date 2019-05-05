@@ -291,6 +291,7 @@ C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\res\drawable\setabaixo.png
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\res\drawable\icontestes.png
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\bin\Debug\System.Numerics.Vectors.pdb
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\bin\Debug\Xamarin.Essentials.dll.mdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\AppTop.Android.pdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\FormsViewGroup.pdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\Microsoft.CSharp.pdb
@@ -316,7 +317,6 @@ C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\System.Transactions.pdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\System.Web.Services.pdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\Mono.Security.pdb
-C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\bin\Debug\Xamarin.Essentials.dll.mdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\AppTop.dll.mdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\Plugin.Connectivity.dll.mdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\Plugin.LocalNotifications.dll.mdb
@@ -350,6 +350,7 @@ C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\res\drawable\iconconfirm.png
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.dll
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\bin\Debug\AppTop.dll.mdb
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop.Android\obj\Debug\81\linksrc\AppTop.dll.mdb

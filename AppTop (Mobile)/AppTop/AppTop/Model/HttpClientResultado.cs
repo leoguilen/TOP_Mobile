@@ -8,7 +8,7 @@ namespace AppTop.Model
 {
     public static class HttpClientResultado
     {
-        //private readonly static string addressBase = "http://192.168.43.108/"; REDE TIM
+        //private readonly static string addressBase = "http://192.168.43.108/"; //REDE TIM
         private readonly static string addressBase = "http://192.168.0.5/"; //REDE CASA
 
         public static HttpClient Configurar()

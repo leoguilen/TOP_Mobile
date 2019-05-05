@@ -2,6 +2,12 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.16299": {
+      "LiveXAML/2.1.72": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -1135,6 +1141,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "LiveXAML": "2.1.72",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -1151,6 +1158,12 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm": {
+      "LiveXAML/2.1.72": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -2670,6 +2683,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "LiveXAML": "2.1.72",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -2686,6 +2700,12 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm-aot": {
+      "LiveXAML/2.1.72": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -4236,6 +4256,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "LiveXAML": "2.1.72",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -4252,6 +4273,12 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm64-aot": {
+      "LiveXAML/2.1.72": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -5799,6 +5826,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "LiveXAML": "2.1.72",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -5815,6 +5843,12 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64": {
+      "LiveXAML/2.1.72": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -7334,6 +7368,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "LiveXAML": "2.1.72",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -7350,6 +7385,12 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64-aot": {
+      "LiveXAML/2.1.72": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -8900,6 +8941,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "LiveXAML": "2.1.72",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -8916,6 +8958,12 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86": {
+      "LiveXAML/2.1.72": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -10435,6 +10483,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "LiveXAML": "2.1.72",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -10451,6 +10500,12 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86-aot": {
+      "LiveXAML/2.1.72": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -12001,6 +12056,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "LiveXAML": "2.1.72",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -12018,6 +12074,27 @@
     }
   },
   "libraries": {
+    "LiveXAML/2.1.72": {
+      "sha512": "FygIPlA+iePfneWWq/2N/mjyi2vrZY45hfJO3QuQJkzUWGajCd8Peq3BTpqyn6y3yskwmesXTGRQbGdeGW5kQg==",
+      "type": "package",
+      "path": "livexaml/2.1.72",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard2.0/LiveXAML.targets",
+        "build/netstandard2.0/XamarinLive.Build.dll",
+        "build/netstandard2.0/XamarinLive.Common.dll",
+        "build/netstandard2.0/minified.cs",
+        "build/netstandard2.0/minified.tpl.cs",
+        "build/portable-win+net45+wp80+win81+wpa81/LiveXAML.targets",
+        "build/portable-win+net45+wp80+win81+wpa81/XamarinLive.Build.dll",
+        "build/portable-win+net45+wp80+win81+wpa81/XamarinLive.Common.dll",
+        "build/portable-win+net45+wp80+win81+wpa81/minified.cs",
+        "build/portable-win+net45+wp80+win81+wpa81/minified.tpl.cs",
+        "livexaml.2.1.72.nupkg.sha512",
+        "livexaml.nuspec"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.7": {
       "sha512": "/76fAHknzvFqbznS6Uj2sOyE9rJB3PltY+f53TH8dX9RiGhk02EhuFCWljSj5nnqKaTsmma8DFR50OGyQ4yJ1g==",
       "type": "package",

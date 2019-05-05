@@ -64,7 +64,9 @@ namespace AppTop
         private void BtnIrSite_Clicked(object sender, EventArgs e)
         {
             //Ir para o site
+            //Device.OpenUri(new Uri("http://192.168.43.108:8080/Top/login.php"));
             Device.OpenUri(new Uri("http://192.168.0.5:8080/Top/login.php"));
+            
         }
 
         private async void BtnOutroTeste_Clicked(object sender, EventArgs e)
