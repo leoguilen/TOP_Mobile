@@ -9,8 +9,13 @@ namespace AppTop.Model
 {
     public class HttpClientUsuario
     {
+        private App getApp = null;
+
         //private readonly static string addressBase = "http://192.168.43.108/"; //REDE TIM
-        private readonly static string addressBase = "http://192.168.0.5/"; //REDE CASA
+        //private readonly static string addressBase = "http://192.168.88.239/"; //REDE AUDITORIO
+        //private readonly static string addressBase = "http://192.168.0.4/"; //REDE CASA
+        
+        private static string addressBase = App.Current.Resources["IPAddress"].ToString();
 
         public static HttpClient Configurar()
         {
@@ -52,10 +57,10 @@ namespace AppTop.Model
 
             HttpClient client = Configurar();
 
-            HttpResponseMessage resp = client.GetAsync("api/usuario/ValidarLogin/" + user + "/" + pwd).Result;
+            HttpResponseMessage resp = client.GetAsync("/api/usuario/ValidarLogin/" + user + "/" + pwd).Result;
             if (resp.IsSuccessStatusCode)
             {
-                var resposta = client.GetStringAsync("api/usuario/ValidarLogin/" + user + "/" + pwd).Result;
+                var resposta = client.GetStringAsync("/api/usuario/ValidarLogin/" + user + "/" + pwd).Result;
                 Status sts = JsonConvert.DeserializeObject<Status>(resposta);
                 erro = "";
 
@@ -95,7 +100,7 @@ namespace AppTop.Model
 
         public static async Task<bool> NewUser(Usuario u,string email,string cel)
         { 
-            string content = addressBase + "api/usuario/NovoUsuario?nome="+u.Nome+"&sexo="+u.Sexo+"&date="+u.DataNascimento+"&user="+u.Username+"&senha="+u.Senha+"&uf="+u.Uf+"&cidade="+u.Cidade+"&nivel="+u.NivelAcademico+"&email="+email+"&cel="+cel;
+            string content = addressBase + "/api/usuario/NovoUsuario?nome="+u.Nome+"&sexo="+u.Sexo+"&date="+u.DataNascimento+"&user="+u.Username+"&senha="+u.Senha+"&uf="+u.Uf+"&cidade="+u.Cidade+"&nivel="+u.NivelAcademico+"&email="+email+"&cel="+cel;
             HttpClient httpClient = Configurar();
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, content);
             HttpResponseMessage response = await httpClient.SendAsync(request);
@@ -112,11 +117,11 @@ namespace AppTop.Model
 
             using (HttpClient client = Configurar())
             {
-                HttpResponseMessage resp = client.GetAsync("api/usuario/PegarIDUsuario/"+user_logado).Result; //Aqui faz primeira consulta
+                HttpResponseMessage resp = client.GetAsync("/api/usuario/PegarIDUsuario/"+user_logado).Result; //Aqui faz primeira consulta
 
                 if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
                 {
-                    var resposta = client.GetStringAsync("api/usuario/PegarIDUsuario/"+user_logado).Result;
+                    var resposta = client.GetStringAsync("/api/usuario/PegarIDUsuario/"+user_logado).Result;
                     Usuario us = JsonConvert.DeserializeObject<Usuario>(resposta); //Converte o resultado em classes usuario
                     id_user = us.ID;
                 }

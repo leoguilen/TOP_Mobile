@@ -5,47 +5,49 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand" 
                  HorizontalOptions="FillAndExpand"
-                 BackgroundColor="WhiteSmoke" Padding="15">
+                 BackgroundColor="WhiteSmoke" Padding="5">
             <StackLayout VerticalOptions="StartAndExpand" 
                          HorizontalOptions="StartAndExpand"
-                         BackgroundColor="Gainsboro" Padding="10" Orientation="Horizontal">
+                         BackgroundColor="Gainsboro" Padding="6" 
+                         Orientation="Horizontal" HeightRequest="70">
                 <Image Source="iconConfirm" HeightRequest="25" WidthRequest="30"/>
-                <Label Text="LGUILEN, aqui estão alguns detalhes do seu teste..." 
-                       FontSize="Medium" TextColor="Teal" HorizontalTextAlignment="Center"/>
+                <Label x:Name="lblAviso" FontSize="Medium"
+                       TextColor="Teal" HorizontalTextAlignment="Center"/>
             </StackLayout>
             <StackLayout VerticalOptions="StartAndExpand">
                 <StackLayout Orientation="Horizontal" 
-                         HeightRequest="80">
+                         HeightRequest="70">
 
                     <Label x:Name="lblExa" Text="Exatas: " HorizontalOptions="FillAndExpand"
                        TextColor="White" FontAttributes="Bold"
                        FontSize="Large" HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"
+                       VerticalTextAlignment="Start"
                        BackgroundColor="CadetBlue"/>
 
                     <Label x:Name="lblHum" Text="Humanas: " HorizontalOptions="FillAndExpand"
                        TextColor="White" FontAttributes="Bold"
                        FontSize="Large" HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"
+                       VerticalTextAlignment="Start"
                        BackgroundColor="CadetBlue"/>
 
                     <Label x:Name="lblBio" Text="Biológicas: " HorizontalOptions="FillAndExpand"
                        TextColor="White" FontAttributes="Bold"
                        FontSize="Large" HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"
+                       VerticalTextAlignment="Start" WidthRequest="150"
                        BackgroundColor="CadetBlue"/>
                 </StackLayout>
             </StackLayout>
             <StackLayout VerticalOptions="FillAndExpand" 
-                     HorizontalOptions="CenterAndExpand" Margin="0,0,0,200">
-                
+                         HorizontalOptions="CenterAndExpand"
+                         Padding="7" Margin="0,0,0,-10">
+
                 <Label x:Name="lblResultado" BackgroundColor="Teal"
                        HorizontalTextAlignment="Center" FontSize="Large" 
                        TextColor="White" Text="Maior Compatibilidade: " 
-                       FontAttributes="Bold" Margin="0,0,0,20" 
-                       HeightRequest="70" WidthRequest="500" VerticalTextAlignment="Center"/>
+                       FontAttributes="Bold" HeightRequest="85" 
+                       WidthRequest="500" VerticalTextAlignment="Center"/>
 
-                <Image x:Name="imgCurso"/>
+                <Image x:Name="imgCurso" WidthRequest="250" HeightRequest="250"/>
 
                 <Button Text="Ir para página principal" 
                     BackgroundColor="Teal" 

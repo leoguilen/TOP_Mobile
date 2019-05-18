@@ -4,10 +4,10 @@
              x:Class="AppTop.PagePrincipalDetail" >
     <ContentPage.Content>
         <StackLayout BackgroundColor="WhiteSmoke">
-            <StackLayout BackgroundColor="WhiteSmoke"
-                     Orientation="Horizontal"
-                     HorizontalOptions="Fill"
-                     Padding="15">
+            <StackLayout BackgroundColor="Gainsboro"
+                     Orientation="Horizontal" 
+                     HorizontalOptions="FillAndExpand"
+                     Padding="15" Margin="10,5,10,0">
 
                 <Image Source="LogoNovo" WidthRequest="50"
                    BackgroundColor="Transparent"
@@ -20,37 +20,38 @@
             </StackLayout>
             <StackLayout BackgroundColor="White" 
                      Margin="10,0,10,0"
-                     Orientation="Horizontal"
+                     Orientation="Vertical"
                      HorizontalOptions="FillAndExpand"
                      VerticalOptions="StartAndExpand">
-
-                <StackLayout BackgroundColor="Gainsboro"
-                         VerticalOptions="FillAndExpand"
-                         HorizontalOptions="FillAndExpand"
-                         Padding="20">
-
-                    <Label x:Name="lblStatus" Text="Status do teste: "
-                       FontAttributes="Bold" TextColor="#03324c"
-                       HorizontalTextAlignment="Center"
-                       VerticalOptions="FillAndExpand"
-                       FontSize="20"/>
-                </StackLayout>
 
                 <StackLayout BackgroundColor="#03324c"
                          VerticalOptions="FillAndExpand"
                          HorizontalOptions="FillAndExpand"
                          Padding="10">
 
-                    <Label x:Name="lblUltimoRes" Text="Resultado do ultimo teste: "
+                    <Label x:Name="lblStatus" Text="Status do teste: "
                        FontAttributes="Bold" TextColor="Gainsboro"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" 
+                       VerticalOptions="CenterAndExpand"
+                       FontSize="20" WidthRequest="500"/>
+                </StackLayout>
+
+                <StackLayout BackgroundColor="Gainsboro"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"
+                         Padding="20">
+
+                    <Label x:Name="lblUltimoRes" Text="Resultado do último teste: "
+                       FontAttributes="Bold" TextColor="#03324c"
                        HorizontalTextAlignment="Center"
                        VerticalOptions="FillAndExpand"
                        FontSize="20"/>
-
+                    <Label Text="_______________________________________________" TextColor="#03324c"/>
                     <Label x:Name="lblUltimoData" Text="Data do ultimo teste: "
                        HorizontalTextAlignment="Center"
                        VerticalOptions="FillAndExpand"
-                       FontSize="15"  TextColor="Gainsboro"/>
+                       FontSize="15"  TextColor="#03324c"/>
                 </StackLayout>
             </StackLayout>
 

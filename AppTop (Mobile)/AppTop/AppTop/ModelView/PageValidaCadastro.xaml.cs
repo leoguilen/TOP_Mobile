@@ -19,6 +19,8 @@ namespace AppTop
 		public PageValidaCadastro (string username, int cod)
 		{
 			InitializeComponent ();
+            NavigationPage.SetHasNavigationBar(this, false);
+
             user_logado = username;
             Cod_Verifica = cod;
 
@@ -26,19 +28,35 @@ namespace AppTop
 
         }
 
+        protected override bool OnBackButtonPressed()
+        {
+            DisplayAlert("NOTIFICAÇÃO", "Use a notificação com o código para liberar seu acesso!", "OK");
+            return true;
+        }
+
+
         private async void Validar_Clicked(object sender, EventArgs e)
         {
-            int valorCod = int.Parse(txtCodVerificar.Text);
+            if(!string.IsNullOrEmpty(txtCodVerificar.Text))
+            {
+                int valorCod = int.Parse(txtCodVerificar.Text);
 
-            if (valorCod == Cod_Verifica)
+                if (valorCod == Cod_Verifica)
+                {
+                    await DisplayAlert("Validação", "Cadastro confirmado com sucesso", "Começar");
+                    await Navigation.PushAsync(new PagePrincipal(user_logado));
+                }
+                else
+                {
+                    await DisplayAlert("Validação", "Seu código não esta correto", "Tentar novamente");
+                }
+            } else
             {
-                await DisplayAlert("Validação", "Cadastro confirmado com sucesso", "Começar");
-                await Navigation.PushAsync(new PagePrincipal(user_logado));
+                await DisplayAlert("ALERTA", "Digite o código de verificação enviado para você!", "OK");
+                return;
             }
-            else
-            {
-                bool tentar = await DisplayAlert("Validação", "Seu código não esta correto", "Tentar novamente",null);
-            }
+
+            
                 
         }
     }

@@ -41,7 +41,7 @@ namespace AppTop.ModelView
             lblSts.TextColor = Color.Green;
 
             //Calculo para a conclusao em porcentagem
-            int numTotalQuestoes = HttpClientPergunta.GetAllQuestions().Count() - 2;
+            int numTotalQuestoes = HttpClientPergunta.GetAllQuestions().Count() - 13;
             double percPorQuestao = (numPagina * 100) / numTotalQuestoes;
             lblPerc.Text = percPorQuestao + "%";
 
@@ -113,9 +113,9 @@ namespace AppTop.ModelView
                 resultadoBiologicas += valueB;
             }
 
-            _listResultadosFinal.Add((resultadoExatas / 10) * 100);
-            _listResultadosFinal.Add((resultadoHumanas / 10) * 100);
-            _listResultadosFinal.Add((resultadoBiologicas / 10) * 100);
+            _listResultadosFinal.Add((resultadoExatas / 10) * 10);
+            _listResultadosFinal.Add((resultadoHumanas / 10) * 10);
+            _listResultadosFinal.Add((resultadoBiologicas / 10) * 10);
 
             return _listResultadosFinal;
 
@@ -217,7 +217,7 @@ namespace AppTop.ModelView
 
                  List<double> verResultado = CalcularResultadosDasRespostas(_listValoresExatas,_listValoresHumanas,_listValoresBiologicas);
                 
-                await HttpClientResultadoTeste.CalculateCompatibility(user_logado, verResultado[0], verResultado[1], verResultado[2]);
+                HttpClientResultadoTeste.CalculateCompatibility(user_logado,Math.Round(verResultado[0],0), Math.Round(verResultado[1], 0), Math.Round(verResultado[2], 0));
                 await Navigation.PushAsync(new PageCalcularResultado(user_logado));
             }
         }

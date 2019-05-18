@@ -63,10 +63,10 @@ namespace AppTop
 
         private void BtnIrSite_Clicked(object sender, EventArgs e)
         {
+            string addressBase = App.Current.Resources["IPAddress"].ToString() + ":8080/Top/login.php";
             //Ir para o site
             //Device.OpenUri(new Uri("http://192.168.43.108:8080/Top/login.php"));
-            Device.OpenUri(new Uri("http://192.168.0.5:8080/Top/login.php"));
-            
+            Device.OpenUri(new Uri(addressBase));
         }
 
         private async void BtnOutroTeste_Clicked(object sender, EventArgs e)

@@ -9,7 +9,10 @@ namespace AppTop.Model
     public static class HttpClientTeste
     {
         //private readonly static string addressBase = "http://192.168.43.108/"; //REDE TIM
-        private readonly static string addressBase = "http://192.168.0.5/"; //REDE CASA
+        //private readonly static string addressBase = "http://192.168.88.239/"; //REDE AUDITORIO
+        //private readonly static string addressBase = "http://192.168.0.4/"; //REDE CASA
+
+        private static string addressBase = App.Current.Resources["IPAddress"].ToString();
 
         public static HttpClient Configurar()
         {
@@ -28,11 +31,11 @@ namespace AppTop.Model
 
             using (HttpClient client = Configurar())
             {
-                HttpResponseMessage resp = client.GetAsync("api/teste/TodosTestes").Result; //Aqui faz primeira consulta
+                HttpResponseMessage resp = client.GetAsync("/api/teste/TodosTestes").Result; //Aqui faz primeira consulta
 
                 if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
                 {
-                    var resposta = client.GetStringAsync("api/teste/TodosTestes").Result;
+                    var resposta = client.GetStringAsync("/api/teste/TodosTestes").Result;
                     Teste[] pe = JsonConvert.DeserializeObject<Teste[]>(resposta); //Converte o resultado em classes usuario
 
                     foreach (var itemPerg in pe)
@@ -52,11 +55,11 @@ namespace AppTop.Model
 
             using (HttpClient client = Configurar())
             {
-                HttpResponseMessage resp = client.GetAsync("api/teste/PegarTestesDoUsuario/"+id_user).Result; //Aqui faz primeira consulta
+                HttpResponseMessage resp = client.GetAsync("/api/teste/PegarTestesDoUsuario/"+id_user).Result; //Aqui faz primeira consulta
 
                 if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
                 {
-                    var resposta = client.GetStringAsync("api/teste/PegarTestesDoUsuario/"+id_user).Result;
+                    var resposta = client.GetStringAsync("/api/teste/PegarTestesDoUsuario/"+id_user).Result;
                     Teste[] pe = JsonConvert.DeserializeObject<Teste[]>(resposta); //Converte o resultado em classes usuario
 
                     foreach (var itemPerg in pe)
@@ -72,7 +75,7 @@ namespace AppTop.Model
 
         public static async void StartNewTest(string user_logado)
         {
-            string content = addressBase + "api/teste/IniciarNovoTeste/" + HttpClientUsuario.ReturnUserId(user_logado);
+            string content = addressBase + "/api/teste/IniciarNovoTeste/" + HttpClientUsuario.ReturnUserId(user_logado);
             HttpClient httpClient = Configurar();
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, content);
             HttpResponseMessage response = await httpClient.SendAsync(request);
@@ -80,7 +83,7 @@ namespace AppTop.Model
 
         public static async void CancelTest(string user_logado)
         {
-            string content = addressBase + "api/teste/CancelarTeste/" + HttpClientUsuario.ReturnUserId(user_logado);
+            string content = addressBase + "/api/teste/CancelarTeste/" + HttpClientUsuario.ReturnUserId(user_logado);
             HttpClient httpClient = Configurar();
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, content);
             HttpResponseMessage response = await httpClient.SendAsync(request);

@@ -9,7 +9,10 @@ namespace AppTop.Model
     public static class HttpClientResultado
     {
         //private readonly static string addressBase = "http://192.168.43.108/"; //REDE TIM
-        private readonly static string addressBase = "http://192.168.0.5/"; //REDE CASA
+        //private readonly static string addressBase = "http://192.168.88.239/"; //REDE AUDITORIO
+        //private readonly static string addressBase = "http://192.168.0.4/"; //REDE CASA
+
+        private static string addressBase = App.Current.Resources["IPAddress"].ToString();
 
         public static HttpClient Configurar()
         {
@@ -28,11 +31,11 @@ namespace AppTop.Model
 
             using (HttpClient client = Configurar())
             {
-                HttpResponseMessage resp = client.GetAsync("api/resultado/TodosResultados").Result; //Aqui faz primeira consulta
+                HttpResponseMessage resp = client.GetAsync("/api/resultado/TodosResultados").Result; //Aqui faz primeira consulta
 
                 if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
                 {
-                    var resposta = client.GetStringAsync("api/resultado/TodosResultados").Result;
+                    var resposta = client.GetStringAsync("/api/resultado/TodosResultados").Result;
                     Resultado[] re = JsonConvert.DeserializeObject<Resultado[]>(resposta); //Converte o resultado em classes usuario
 
                     foreach (var itemResp in re)
@@ -52,11 +55,11 @@ namespace AppTop.Model
 
             using (HttpClient client = Configurar())
             {
-                HttpResponseMessage resp = client.GetAsync("api/resultado/TrazerResultado/"+username).Result; //Aqui faz primeira consulta
+                HttpResponseMessage resp = client.GetAsync("/api/resultado/TrazerResultado/"+username).Result; //Aqui faz primeira consulta
 
                 if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
                 {
-                    var resposta = client.GetStringAsync("api/resultado/TrazerResultado/"+username).Result;
+                    var resposta = client.GetStringAsync("/api/resultado/TrazerResultado/"+username).Result;
                     Resultado[] re = JsonConvert.DeserializeObject<Resultado[]>(resposta); //Converte o resultado em classes usuario
 
                     foreach (var itemResp in re)

@@ -41,7 +41,7 @@ namespace AppTop.ModelView
             lblSts.TextColor = Color.Green;
 
             //Calculo para a conclusao em porcentagem
-            int numTotalQuestoes = HttpClientPergunta.GetAllQuestions().Count() - 2;
+            int numTotalQuestoes = HttpClientPergunta.GetAllQuestions().Count() - 13;
             double percPorQuestao = (numPagina * 100) / numTotalQuestoes;
             lblPerc.Text = percPorQuestao + "%";
 

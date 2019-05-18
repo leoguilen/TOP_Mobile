@@ -11,13 +11,15 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("AppTop")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("EduTech")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("EduTech")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("AppTop")]
+[assembly: System.Reflection.AssemblyProductAttribute("Teste de Orientação Profissional")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppTop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Resources.NeutralResourcesLanguageAttribute("pt-BR")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 

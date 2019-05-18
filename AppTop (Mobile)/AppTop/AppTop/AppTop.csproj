@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>EduTech</Company>
+    <Authors>Leonardo Cruz Guilen</Authors>
+    <Product>Teste de Orientação Profissional</Product>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>EduTech</Copyright>
+    <NeutralLanguage>pt-BR</NeutralLanguage>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

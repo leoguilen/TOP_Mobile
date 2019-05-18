@@ -9,8 +9,11 @@ namespace AppTop.Model
     public static class HttpClientPergunta
     {
         //private readonly static string addressBase = "http://192.168.43.108/"; //REDE TIM
-        private readonly static string addressBase = "http://192.168.0.5/"; //REDE CASA
+        //private readonly static string addressBase = "http://192.168.88.239/"; //REDE AUDITORIO
+        //private readonly static string addressBase = "http://192.168.0.4/"; //REDE CASA
 
+        private static string addressBase = App.Current.Resources["IPAddress"].ToString();
+        
         public static HttpClient Configurar()
         {
             HttpClient client = new HttpClient();
@@ -28,11 +31,11 @@ namespace AppTop.Model
 
             using (HttpClient client = Configurar())
             {
-                HttpResponseMessage resp = client.GetAsync("api/questao/TodasPerguntas").Result; //Aqui faz primeira consulta
+                HttpResponseMessage resp = client.GetAsync("/api/questao/TodasPerguntas").Result; //Aqui faz primeira consulta
 
                 if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
                 {
-                    var resposta = client.GetStringAsync("api/questao/TodasPerguntas").Result;
+                    var resposta = client.GetStringAsync("/api/questao/TodasPerguntas").Result;
                     Pergunta[] pe = JsonConvert.DeserializeObject<Pergunta[]>(resposta); //Converte o resultado em classes usuario
 
                     foreach (var itemPerg in pe)
@@ -52,11 +55,11 @@ namespace AppTop.Model
 
             using (HttpClient client = Configurar())
             {
-                HttpResponseMessage resp = client.GetAsync("api/questao/GerarPergunta").Result; //Aqui faz primeira consulta
+                HttpResponseMessage resp = client.GetAsync("/api/questao/GerarPergunta").Result; //Aqui faz primeira consulta
 
                 if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
                 {
-                    var resposta = client.GetStringAsync("api/questao/GerarPergunta").Result;
+                    var resposta = client.GetStringAsync("/api/questao/GerarPergunta").Result;
                     Pergunta pe = JsonConvert.DeserializeObject<Pergunta>(resposta); //Converte o resultado em classes usuario
                     perg = pe;
                 }
@@ -71,11 +74,11 @@ namespace AppTop.Model
 
             using (HttpClient client = Configurar())
             {
-                HttpResponseMessage resp = client.GetAsync("api/questao/TodasRespostas").Result; //Aqui faz primeira consulta
+                HttpResponseMessage resp = client.GetAsync("/api/questao/TodasRespostas").Result; //Aqui faz primeira consulta
 
                 if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
                 {
-                    var resposta = client.GetStringAsync("api/questao/TodasRespostas").Result;
+                    var resposta = client.GetStringAsync("/api/questao/TodasRespostas").Result;
                     Resposta[] res = JsonConvert.DeserializeObject<Resposta[]>(resposta); //Converte o resultado em classes usuario
 
                     foreach (var itemPerg in res)
@@ -94,11 +97,11 @@ namespace AppTop.Model
 
             using (HttpClient client = Configurar())
             {
-                HttpResponseMessage resp = client.GetAsync("api/questao/PegarRespostaDaPergunta/"+id_perg).Result; //Aqui faz primeira consulta
+                HttpResponseMessage resp = client.GetAsync("/api/questao/PegarRespostaDaPergunta/"+id_perg).Result; //Aqui faz primeira consulta
 
                 if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
                 {
-                    var resposta = client.GetStringAsync("api/questao/PegarRespostaDaPergunta/" + id_perg).Result;
+                    var resposta = client.GetStringAsync("/api/questao/PegarRespostaDaPergunta/" + id_perg).Result;
                     Resposta[] res = JsonConvert.DeserializeObject<Resposta[]>(resposta); //Converte o resultado em classes usuario
 
                     foreach (var itemPerg in res)

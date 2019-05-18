@@ -38,9 +38,9 @@ namespace AppTop
             lblSts.TextColor = Color.Green;
 
             //Calculo para a conclusao em porcentagem
-            int numTotalQuestoes = HttpClientPergunta.GetAllQuestions().Count() - 2;
-            double percPorQuestao = (numPagina * 100) / numTotalQuestoes;
-            lblPerc.Text = percPorQuestao + "%";
+            int numTotalQuestoes = HttpClientPergunta.GetAllQuestions().Count() - 13;
+            //double percPorQuestao = (numPagina * 100) / numTotalQuestoes;
+            lblPerc.Text = "0%";
 
             //Total de perguntas e a qtde que faltam para terminar
             lblTotalPerg.Text = numPagina + "/" + numTotalQuestoes;
@@ -50,7 +50,9 @@ namespace AppTop
             //Pegando a pergunta gerada e colocando na pagina
             lblPerg.Text = numPagina + ") " + pergunta.DescPergunta;
 
-            foreach (var resp in HttpClientPergunta.GetAnswersForQuestion(pergunta.IdPergunta))
+            IEnumerable<Resposta> resps = HttpClientPergunta.GetAnswersForQuestion(pergunta.IdPergunta);
+
+            foreach (var resp in resps)
             {
                 _listResps.Add(resp);
             }

@@ -10,7 +10,10 @@ namespace AppTop.Model
     public static class HttpClientResultadoTeste
     {
         //private readonly static string addressBase = "http://192.168.43.108/"; //REDE TIM
-        private readonly static string addressBase = "http://192.168.0.5/"; //REDE CASA
+        //private readonly static string addressBase = "http://192.168.88.239/"; //REDE AUDITORIO
+        //private readonly static string addressBase = "http://192.168.0.4/"; //REDE CASA
+
+        private static string addressBase = App.Current.Resources["IPAddress"].ToString();
 
         public static HttpClient Configurar()
         {
@@ -29,11 +32,11 @@ namespace AppTop.Model
 
             using (HttpClient client = Configurar())
             {
-                HttpResponseMessage resp = client.GetAsync("api/detalhesResultado/TodosDetalhesDosTestes").Result; //Aqui faz primeira consulta
+                HttpResponseMessage resp = client.GetAsync("/api/detalhesResultado/TodosDetalhesDosTestes").Result; //Aqui faz primeira consulta
 
                 if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
                 {
-                    var resposta = client.GetStringAsync("api/detalhesResultado/TodosDetalhesDosTestes").Result;
+                    var resposta = client.GetStringAsync("/api/detalhesResultado/TodosDetalhesDosTestes").Result;
                     ResultadoTeste[] result = JsonConvert.DeserializeObject<ResultadoTeste[]>(resposta); //Converte o resultado em classes usuario
 
                     foreach (var itemPerg in result)
@@ -52,11 +55,11 @@ namespace AppTop.Model
 
             using (HttpClient client = Configurar())
             {
-                HttpResponseMessage resp = client.GetAsync("api/detalhesResultado/DetalhesDosTestesDoUsuario/"+id_teste).Result; //Aqui faz primeira consulta
+                HttpResponseMessage resp = client.GetAsync("/api/detalhesResultado/DetalhesDosTestesDoUsuario/"+id_teste).Result; //Aqui faz primeira consulta
 
                 if (resp.IsSuccessStatusCode) //Verifica se a consulta é valida
                 {
-                    var resposta = client.GetStringAsync("api/detalhesResultado/DetalhesDosTestesDoUsuario/"+id_teste).Result;
+                    var resposta = client.GetStringAsync("/api/detalhesResultado/DetalhesDosTestesDoUsuario/"+id_teste).Result;
                     ResultadoTeste result = JsonConvert.DeserializeObject<ResultadoTeste>(resposta); //Converte o resultado em classes usuario
 
                     _listResultTest.Add(result);
@@ -66,12 +69,13 @@ namespace AppTop.Model
             return _listResultTest;
         }
 
-        public static async Task CalculateCompatibility(string user_logado,double ve,double vh,double vb)
+        public static void CalculateCompatibility(string user_logado,double ve,double vh,double vb)
         {
-            string content = addressBase + "api/detalhesResultado/CalcularResultadoDaCompatibilidade/" + user_logado + "/" + Math.Round(ve,0) + "/" + Math.Round(vh,0) + "/" + Math.Round(vb,0);
+            string content = addressBase + "/api/detalhesResultado/CalcularResultadoDaCompatibilidade/" + user_logado + "/" + ve + "/" + vh + "/" + vb;
             HttpClient httpClient = Configurar();
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, content);
-            HttpResponseMessage response = await httpClient.SendAsync(request);
+            HttpResponseMessage response = httpClient.SendAsync(request).Result;
+            bool valido = response.IsSuccessStatusCode;
         }
     }
 }

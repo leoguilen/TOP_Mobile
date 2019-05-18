@@ -58,6 +58,6 @@ C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\n
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp9.xaml.g.cs
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageMeusTestes.xaml.g.cs
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageSemTeste.xaml.g.cs
+C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageCalcularResultado.xaml.g.cs
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageCalcularResultado.xaml.g.cs

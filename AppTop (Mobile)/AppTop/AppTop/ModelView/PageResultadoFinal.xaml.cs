@@ -23,8 +23,8 @@ namespace AppTop.ModelView
 
             user_logado = username;
 
-            Resultado result = HttpClientResultado.GetResult(user_logado).FirstOrDefault();
-
+            Resultado result = HttpClientResultado.GetResult(user_logado).Where(us => us.NovoTeste == 1).FirstOrDefault();
+            lblAviso.Text = user_logado + ", aqui estão alguns detalhes do seu teste...";
             lblResultado.Text += result.NomeCurso;
             lblExa.Text += result.ResultadoExatas + "%";
             lblBio.Text += result.ResultadoBiologicas + "%";
