@@ -47,7 +47,7 @@
                        FontAttributes="Bold" HeightRequest="85" 
                        WidthRequest="500" VerticalTextAlignment="Center"/>
 
-                <Image x:Name="imgCurso" WidthRequest="250" HeightRequest="250"/>
+                <Image x:Name="imgCurso" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
 
                 <Button Text="Ir para página principal" 
                     BackgroundColor="Teal" 

@@ -8,6 +8,20 @@
           "build/netstandard2.0/_._": {}
         }
       },
+      "Messier16.Forms.Controls/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.280555"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Messier16.Forms.Android.Controls.dll": {},
+          "lib/MonoAndroid10/Messier16.Forms.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Messier16.Forms.Android.Controls.dll": {},
+          "lib/MonoAndroid10/Messier16.Forms.Controls.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -754,6 +768,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "LiveXAML": "2.1.72",
+          "Messier16.Forms.Controls": "2.2.0",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -790,6 +805,27 @@
         "build/portable-win+net45+wp80+win81+wpa81/minified.tpl.cs",
         "livexaml.2.1.72.nupkg.sha512",
         "livexaml.nuspec"
+      ]
+    },
+    "Messier16.Forms.Controls/2.2.0": {
+      "sha512": "nszEstK+8UCLi0PhBKHTkSGoqcFMmahTYmxJ3Bum6DYVYl3KwHILSDmwEAXXUPsygpvaN0WsNp9Oqd6DYbXEZg==",
+      "type": "package",
+      "path": "messier16.forms.controls/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Messier16.Forms.Android.Controls.dll",
+        "lib/MonoAndroid10/Messier16.Forms.Controls.dll",
+        "lib/MonoTouch10/Messier16.Forms.Controls.dll",
+        "lib/MonoTouch10/Messier16.Forms.iOS.Controls.dll",
+        "lib/UAP10/Messier16.Forms.Controls.dll",
+        "lib/UAP10/Messier16.Forms.Uwp.Controls.dll",
+        "lib/Xamarin.iOS10/Messier16.Forms.Controls.dll",
+        "lib/Xamarin.iOS10/Messier16.Forms.iOS.Controls.dll",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Messier16.Forms.Controls.dll",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Messier16.Forms.Controls.pdb",
+        "messier16.forms.controls.2.2.0.nupkg.sha512",
+        "messier16.forms.controls.nuspec"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.7": {
@@ -3485,6 +3521,7 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
       "AppTop >= 1.0.0",
+      "Messier16.Forms.Controls >= 2.2.0",
       "Plugin.CurrentActivity >= 2.1.0.4",
       "System.Buffers >= 4.5.0",
       "Xam.Plugin.Connectivity >= 3.2.0",
@@ -3505,11 +3542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop.Android\\AppTop.Android.csproj",
+      "projectUniqueName": "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop.Android\\AppTop.Android.csproj",
       "projectName": "AppTop.Android",
-      "projectPath": "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop.Android\\AppTop.Android.csproj",
+      "projectPath": "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop.Android\\AppTop.Android.csproj",
       "packagesPath": "C:\\Users\\LGuilen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop.Android\\obj\\",
+      "outputPath": "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -3526,8 +3563,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop\\AppTop.csproj": {
-              "projectPath": "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop\\AppTop.csproj"
+            "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop\\AppTop.csproj": {
+              "projectPath": "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop\\AppTop.csproj"
             }
           }
         }
@@ -3536,6 +3573,10 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
+          "Messier16.Forms.Controls": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Plugin.CurrentActivity": {
             "target": "Package",
             "version": "[2.1.0.4, )"

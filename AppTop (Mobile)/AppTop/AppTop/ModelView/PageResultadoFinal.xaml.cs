@@ -39,7 +39,7 @@ namespace AppTop.ModelView
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PagePrincipal(user_logado));
+            await Navigation.PushAsync(new PageAvaliacao(user_logado));
         }
     }
 }

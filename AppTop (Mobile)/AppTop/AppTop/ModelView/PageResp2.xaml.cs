@@ -49,7 +49,7 @@ namespace AppTop.ModelView
             lblTotalPerg.Text = numPagina + "/" + numTotalQuestoes;
 
             Pergunta pergunta = HttpClientPergunta.GetQuestion();
-
+            
             //Pegando a pergunta gerada e colocando na pagina
             lblPerg.Text = numPagina + ") " + pergunta.DescPergunta;
 
@@ -186,7 +186,7 @@ namespace AppTop.ModelView
                             break;
                     }
                 }
-                
+
                 //await DisplayAlert("Resultado Parcial", string.Format("TOTAIS = Exatas: {0} - Humanas: {1} - Biologicas: {2}", verResultado[0],verResultado[1],verResultado[2] ),"OK");
 
                 await Navigation.PushAsync(new PageResp3(user_logado, _listValoresExatas, _listValoresHumanas, _listValoresBiologicas));

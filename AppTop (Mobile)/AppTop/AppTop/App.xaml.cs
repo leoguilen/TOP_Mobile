@@ -18,7 +18,7 @@ namespace AppTop
             else
                 MainPage = new PageErroNet();
 
-            App.Current.Resources.Add("IPAddress", "http://192.168.0.5");
+            App.Current.Resources.Add("IPAddress", "http://10.0.10.109");
             //MainPage = new NavigationPage(new MainPage());  //Inicial MainPage()
         }
 

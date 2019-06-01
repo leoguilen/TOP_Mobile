@@ -7,7 +7,7 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-  <application android:label="AppTop.Android" android:icon="@drawable/logo" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+  <application android:label="AppTop" android:icon="@drawable/logo" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/logo" android:label="TOP Testes" android:theme="@style/MainTheme" android:name="md598536650d56f80c74c06e60afa4ad536.MainActivity" />
     <activity android:label="TOP Teste" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md598536650d56f80c74c06e60afa4ad536.SplashActivity">
       <intent-filter>

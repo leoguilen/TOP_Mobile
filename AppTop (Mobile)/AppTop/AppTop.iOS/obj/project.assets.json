@@ -8,6 +8,20 @@
           "build/netstandard2.0/_._": {}
         }
       },
+      "Messier16.Forms.Controls/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.280555"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Messier16.Forms.Controls.dll": {},
+          "lib/Xamarin.iOS10/Messier16.Forms.iOS.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Messier16.Forms.Controls.dll": {},
+          "lib/Xamarin.iOS10/Messier16.Forms.iOS.Controls.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -494,6 +508,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "LiveXAML": "2.1.72",
+          "Messier16.Forms.Controls": "2.2.0",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -516,6 +531,20 @@
           "build/netstandard2.0/_._": {}
         }
       },
+      "Messier16.Forms.Controls/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.280555"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Messier16.Forms.Controls.dll": {},
+          "lib/Xamarin.iOS10/Messier16.Forms.iOS.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Messier16.Forms.Controls.dll": {},
+          "lib/Xamarin.iOS10/Messier16.Forms.iOS.Controls.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -1002,6 +1031,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "LiveXAML": "2.1.72",
+          "Messier16.Forms.Controls": "2.2.0",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -1024,6 +1054,20 @@
           "build/netstandard2.0/_._": {}
         }
       },
+      "Messier16.Forms.Controls/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.280555"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Messier16.Forms.Controls.dll": {},
+          "lib/Xamarin.iOS10/Messier16.Forms.iOS.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Messier16.Forms.Controls.dll": {},
+          "lib/Xamarin.iOS10/Messier16.Forms.iOS.Controls.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -1510,6 +1554,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "LiveXAML": "2.1.72",
+          "Messier16.Forms.Controls": "2.2.0",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -1532,6 +1577,20 @@
           "build/netstandard2.0/_._": {}
         }
       },
+      "Messier16.Forms.Controls/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.280555"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Messier16.Forms.Controls.dll": {},
+          "lib/Xamarin.iOS10/Messier16.Forms.iOS.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Messier16.Forms.Controls.dll": {},
+          "lib/Xamarin.iOS10/Messier16.Forms.iOS.Controls.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -2018,6 +2077,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "LiveXAML": "2.1.72",
+          "Messier16.Forms.Controls": "2.2.0",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugins.Notifier": "3.0.1",
@@ -2054,6 +2114,27 @@
         "build/portable-win+net45+wp80+win81+wpa81/minified.tpl.cs",
         "livexaml.2.1.72.nupkg.sha512",
         "livexaml.nuspec"
+      ]
+    },
+    "Messier16.Forms.Controls/2.2.0": {
+      "sha512": "nszEstK+8UCLi0PhBKHTkSGoqcFMmahTYmxJ3Bum6DYVYl3KwHILSDmwEAXXUPsygpvaN0WsNp9Oqd6DYbXEZg==",
+      "type": "package",
+      "path": "messier16.forms.controls/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Messier16.Forms.Android.Controls.dll",
+        "lib/MonoAndroid10/Messier16.Forms.Controls.dll",
+        "lib/MonoTouch10/Messier16.Forms.Controls.dll",
+        "lib/MonoTouch10/Messier16.Forms.iOS.Controls.dll",
+        "lib/UAP10/Messier16.Forms.Controls.dll",
+        "lib/UAP10/Messier16.Forms.Uwp.Controls.dll",
+        "lib/Xamarin.iOS10/Messier16.Forms.Controls.dll",
+        "lib/Xamarin.iOS10/Messier16.Forms.iOS.Controls.dll",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Messier16.Forms.Controls.dll",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Messier16.Forms.Controls.pdb",
+        "messier16.forms.controls.2.2.0.nupkg.sha512",
+        "messier16.forms.controls.nuspec"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.7": {
@@ -4273,11 +4354,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop.iOS\\AppTop.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop.iOS\\AppTop.iOS.csproj",
       "projectName": "AppTop.iOS",
-      "projectPath": "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop.iOS\\AppTop.iOS.csproj",
+      "projectPath": "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop.iOS\\AppTop.iOS.csproj",
       "packagesPath": "C:\\Users\\LGuilen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop.iOS\\obj\\",
+      "outputPath": "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -4294,8 +4375,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop\\AppTop.csproj": {
-              "projectPath": "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop\\AppTop.csproj"
+            "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop\\AppTop.csproj": {
+              "projectPath": "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop\\AppTop.csproj"
             }
           }
         }

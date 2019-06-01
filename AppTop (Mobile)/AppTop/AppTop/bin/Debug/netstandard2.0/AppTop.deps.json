@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "62ac9656043ad3095407125afdb7c760578678e8"
+    "signature": "08cbf9dab5eadd1cb0b2f32b2ba47606761f4f9f"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,6 +10,7 @@
       "AppTop/1.0.0": {
         "dependencies": {
           "LiveXAML": "2.1.72",
+          "Messier16.Forms.Controls": "2.2.0",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "NETStandard.Library": "2.0.3",
           "Xam.Plugin.Connectivity": "3.2.0",
@@ -24,6 +25,17 @@
         }
       },
       "LiveXAML/2.1.72": {},
+      "Messier16.Forms.Controls/2.2.0": {
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.293080"
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Messier16.Forms.Controls.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.1",
@@ -733,6 +745,13 @@
       "sha512": "sha512-FygIPlA+iePfneWWq/2N/mjyi2vrZY45hfJO3QuQJkzUWGajCd8Peq3BTpqyn6y3yskwmesXTGRQbGdeGW5kQg==",
       "path": "livexaml/2.1.72",
       "hashPath": "livexaml.2.1.72.nupkg.sha512"
+    },
+    "Messier16.Forms.Controls/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nszEstK+8UCLi0PhBKHTkSGoqcFMmahTYmxJ3Bum6DYVYl3KwHILSDmwEAXXUPsygpvaN0WsNp9Oqd6DYbXEZg==",
+      "path": "messier16.forms.controls/2.2.0",
+      "hashPath": "messier16.forms.controls.2.2.0.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.7": {
       "type": "package",

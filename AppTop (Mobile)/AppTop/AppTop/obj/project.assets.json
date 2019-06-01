@@ -8,6 +8,18 @@
           "build/netstandard2.0/LiveXAML.targets": {}
         }
       },
+      "Messier16.Forms.Controls/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.280555"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Messier16.Forms.Controls.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Messier16.Forms.Controls.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -854,6 +866,27 @@
         "build/portable-win+net45+wp80+win81+wpa81/minified.tpl.cs",
         "livexaml.2.1.72.nupkg.sha512",
         "livexaml.nuspec"
+      ]
+    },
+    "Messier16.Forms.Controls/2.2.0": {
+      "sha512": "nszEstK+8UCLi0PhBKHTkSGoqcFMmahTYmxJ3Bum6DYVYl3KwHILSDmwEAXXUPsygpvaN0WsNp9Oqd6DYbXEZg==",
+      "type": "package",
+      "path": "messier16.forms.controls/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Messier16.Forms.Android.Controls.dll",
+        "lib/MonoAndroid10/Messier16.Forms.Controls.dll",
+        "lib/MonoTouch10/Messier16.Forms.Controls.dll",
+        "lib/MonoTouch10/Messier16.Forms.iOS.Controls.dll",
+        "lib/UAP10/Messier16.Forms.Controls.dll",
+        "lib/UAP10/Messier16.Forms.Uwp.Controls.dll",
+        "lib/Xamarin.iOS10/Messier16.Forms.Controls.dll",
+        "lib/Xamarin.iOS10/Messier16.Forms.iOS.Controls.dll",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Messier16.Forms.Controls.dll",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Messier16.Forms.Controls.pdb",
+        "messier16.forms.controls.2.2.0.nupkg.sha512",
+        "messier16.forms.controls.nuspec"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.7": {
@@ -3943,6 +3976,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "LiveXAML >= 2.1.72",
+      "Messier16.Forms.Controls >= 2.2.0",
       "Microsoft.AspNet.WebApi.Client >= 5.2.7",
       "NETStandard.Library >= 2.0.3",
       "Xam.Plugin.Connectivity >= 3.2.0",
@@ -3959,11 +3993,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop\\AppTop.csproj",
+      "projectUniqueName": "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop\\AppTop.csproj",
       "projectName": "AppTop",
-      "projectPath": "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop\\AppTop.csproj",
+      "projectPath": "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop\\AppTop.csproj",
       "packagesPath": "C:\\Users\\LGuilen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LGuilen\\Documents\\Projetos C#\\AppTop (Mobile)\\AppTop\\AppTop\\obj\\",
+      "outputPath": "C:\\Users\\LGuilen\\source\\repos\\leoguilen\\TOP_Mobile\\AppTop (Mobile)\\AppTop\\AppTop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3996,6 +4030,10 @@
           "LiveXAML": {
             "target": "Package",
             "version": "[2.1.72, )"
+          },
+          "Messier16.Forms.Controls": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "Microsoft.AspNet.WebApi.Client": {
             "target": "Package",
@@ -4035,5 +4073,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'Messier16.Forms.Controls 2.2.0' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETStandard,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "Messier16.Forms.Controls",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

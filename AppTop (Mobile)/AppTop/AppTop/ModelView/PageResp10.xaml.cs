@@ -49,7 +49,7 @@ namespace AppTop.ModelView
             lblTotalPerg.Text = numPagina + "/" + numTotalQuestoes;
 
             Pergunta pergunta = HttpClientPergunta.GetQuestion();
-
+            
             //Pegando a pergunta gerada e colocando na pagina
             lblPerg.Text = numPagina + ") " + pergunta.DescPergunta;
 
@@ -216,9 +216,25 @@ namespace AppTop.ModelView
                 }
 
                  List<double> verResultado = CalcularResultadosDasRespostas(_listValoresExatas,_listValoresHumanas,_listValoresBiologicas);
+                List<double> arredResults = new List<double>();
+
+                foreach (var valores in verResultado)
+                {
+                    string[] tipoArred = valores.ToString().Split(',');
+
+                    if(double.Parse(tipoArred[1]) > 50)
+                    {
+                        arredResults.Add(Math.Round(valores, 0));
+                    }
+                    else
+                    {
+                        arredResults.Add(Math.Floor(valores));
+                    }
+                }
+
+                HttpClientResultadoTeste.CalculateCompatibility(user_logado, arredResults[0], arredResults[1], arredResults[2]);
                 
-                HttpClientResultadoTeste.CalculateCompatibility(user_logado,Math.Round(verResultado[0],0), Math.Round(verResultado[1], 0), Math.Round(verResultado[2], 0));
-                await Navigation.PushAsync(new PageCalcularResultado(user_logado));
+                Navigation.PushAsync(new PageCalcularResultado(user_logado));
             }
         }
         

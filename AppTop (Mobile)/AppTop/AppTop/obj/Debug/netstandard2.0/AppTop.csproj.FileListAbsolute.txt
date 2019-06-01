@@ -61,3 +61,39 @@ C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\n
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageCalcularResultado.xaml.g.cs
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\LGuilen\Documents\Projetos C#\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.deps.json
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.dll
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\AppTop.pdb
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.csprojAssemblyReference.cache
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\MainPage.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageCadastro.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageCalcularResultado.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageErroNet.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageMeusTestes.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PagePrincipal.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PagePrincipalDetail.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp1.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp10.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp2.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp3.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp4.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp5.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp6.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp7.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp8.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResp9.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageResultadoFinal.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageSemTeste.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageValidaCadastro.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.csproj.CoreCompileInputs.cache
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.AssemblyInfoInputs.cache
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.AssemblyInfo.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.csproj.CopyComplete
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.dll
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\AppTop.pdb
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\ModelView\PageAvaliacao.xaml.g.cs
+C:\Users\LGuilen\source\repos\leoguilen\TOP_Mobile\AppTop (Mobile)\AppTop\AppTop\obj\Debug\netstandard2.0\XamlC.stamp

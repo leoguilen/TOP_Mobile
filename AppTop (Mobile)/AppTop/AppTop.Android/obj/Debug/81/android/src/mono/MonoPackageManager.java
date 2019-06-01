@@ -109,6 +109,8 @@ class MonoPackageManager_Resources {
 		"AppTop.Android.dll",
 		"AppTop.dll",
 		"FormsViewGroup.dll",
+		"Messier16.Forms.Android.Controls.dll",
+		"Messier16.Forms.Controls.dll",
 		"Newtonsoft.Json.Bson.dll",
 		"Newtonsoft.Json.dll",
 		"Plugin.Connectivity.Abstractions.dll",

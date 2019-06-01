@@ -21,8 +21,8 @@ namespace AppTop.Droid
             CrossCurrentActivity.Current.Init(this,savedInstanceState);
 
             base.OnCreate(savedInstanceState);
-            
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            Messier16.Forms.Android.Controls.Messier16Controls.InitAll();
             LoadApplication(new App());
 
         }

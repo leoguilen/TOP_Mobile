@@ -1509,6 +1509,35 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static int layout_scrollInterpolator=0x7f01011c;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int lineColor=0x7f010174;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int lineHeightSelected=0x7f010176;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int lineHeightUnselected=0x7f010175;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1959,6 +1988,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static int seekBarStyle=0x7f0100c4;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int segmentedControlOptionStyle=0x7f010173;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -2744,30 +2781,30 @@ containing a value of this type.
         public static int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0f0004;
     }
     public static final class color {
-        public static int abc_background_cache_hint_selector_material_dark=0x7f0e004f;
-        public static int abc_background_cache_hint_selector_material_light=0x7f0e0050;
-        public static int abc_btn_colored_borderless_text_material=0x7f0e0051;
-        public static int abc_btn_colored_text_material=0x7f0e0052;
-        public static int abc_color_highlight_material=0x7f0e0053;
-        public static int abc_hint_foreground_material_dark=0x7f0e0054;
-        public static int abc_hint_foreground_material_light=0x7f0e0055;
+        public static int abc_background_cache_hint_selector_material_dark=0x7f0e0053;
+        public static int abc_background_cache_hint_selector_material_light=0x7f0e0054;
+        public static int abc_btn_colored_borderless_text_material=0x7f0e0055;
+        public static int abc_btn_colored_text_material=0x7f0e0056;
+        public static int abc_color_highlight_material=0x7f0e0057;
+        public static int abc_hint_foreground_material_dark=0x7f0e0058;
+        public static int abc_hint_foreground_material_light=0x7f0e0059;
         public static int abc_input_method_navigation_guard=0x7f0e0004;
-        public static int abc_primary_text_disable_only_material_dark=0x7f0e0056;
-        public static int abc_primary_text_disable_only_material_light=0x7f0e0057;
-        public static int abc_primary_text_material_dark=0x7f0e0058;
-        public static int abc_primary_text_material_light=0x7f0e0059;
-        public static int abc_search_url_text=0x7f0e005a;
+        public static int abc_primary_text_disable_only_material_dark=0x7f0e005a;
+        public static int abc_primary_text_disable_only_material_light=0x7f0e005b;
+        public static int abc_primary_text_material_dark=0x7f0e005c;
+        public static int abc_primary_text_material_light=0x7f0e005d;
+        public static int abc_search_url_text=0x7f0e005e;
         public static int abc_search_url_text_normal=0x7f0e0005;
         public static int abc_search_url_text_pressed=0x7f0e0006;
         public static int abc_search_url_text_selected=0x7f0e0007;
-        public static int abc_secondary_text_material_dark=0x7f0e005b;
-        public static int abc_secondary_text_material_light=0x7f0e005c;
-        public static int abc_tint_btn_checkable=0x7f0e005d;
-        public static int abc_tint_default=0x7f0e005e;
-        public static int abc_tint_edittext=0x7f0e005f;
-        public static int abc_tint_seek_thumb=0x7f0e0060;
-        public static int abc_tint_spinner=0x7f0e0061;
-        public static int abc_tint_switch_track=0x7f0e0062;
+        public static int abc_secondary_text_material_dark=0x7f0e005f;
+        public static int abc_secondary_text_material_light=0x7f0e0060;
+        public static int abc_tint_btn_checkable=0x7f0e0061;
+        public static int abc_tint_default=0x7f0e0062;
+        public static int abc_tint_edittext=0x7f0e0063;
+        public static int abc_tint_seek_thumb=0x7f0e0064;
+        public static int abc_tint_spinner=0x7f0e0065;
+        public static int abc_tint_switch_track=0x7f0e0066;
         public static int accent_material_dark=0x7f0e0008;
         public static int accent_material_light=0x7f0e0009;
         public static int background_floating_material_dark=0x7f0e000a;
@@ -2786,11 +2823,11 @@ containing a value of this type.
         public static int cardview_light_background=0x7f0e0001;
         public static int cardview_shadow_end_color=0x7f0e0002;
         public static int cardview_shadow_start_color=0x7f0e0003;
-        public static int colorAccent=0x7f0e004e;
-        public static int colorPrimary=0x7f0e004c;
-        public static int colorPrimaryDark=0x7f0e004d;
+        public static int colorAccent=0x7f0e0052;
+        public static int colorPrimary=0x7f0e0050;
+        public static int colorPrimaryDark=0x7f0e0051;
         public static int design_bottom_navigation_shadow_color=0x7f0e0040;
-        public static int design_error=0x7f0e0063;
+        public static int design_error=0x7f0e0067;
         public static int design_fab_shadow_end_color=0x7f0e0041;
         public static int design_fab_shadow_mid_color=0x7f0e0042;
         public static int design_fab_shadow_start_color=0x7f0e0043;
@@ -2799,7 +2836,7 @@ containing a value of this type.
         public static int design_fab_stroke_top_inner_color=0x7f0e0046;
         public static int design_fab_stroke_top_outer_color=0x7f0e0047;
         public static int design_snackbar_background_color=0x7f0e0048;
-        public static int design_tint_password_toggle=0x7f0e0064;
+        public static int design_tint_password_toggle=0x7f0e0068;
         public static int dim_foreground_disabled_material_dark=0x7f0e0016;
         public static int dim_foreground_disabled_material_light=0x7f0e0017;
         public static int dim_foreground_material_dark=0x7f0e0018;
@@ -2807,9 +2844,11 @@ containing a value of this type.
         public static int error_color_material=0x7f0e001a;
         public static int foreground_material_dark=0x7f0e001b;
         public static int foreground_material_light=0x7f0e001c;
+        public static int highlight=0x7f0e004d;
         public static int highlighted_text_material_dark=0x7f0e001d;
         public static int highlighted_text_material_light=0x7f0e001e;
-        public static int launcher_background=0x7f0e004b;
+        public static int launcher_background=0x7f0e004f;
+        public static int light=0x7f0e004c;
         public static int material_blue_grey_800=0x7f0e001f;
         public static int material_blue_grey_900=0x7f0e0020;
         public static int material_blue_grey_950=0x7f0e0021;
@@ -2822,6 +2861,7 @@ containing a value of this type.
         public static int material_grey_800=0x7f0e0028;
         public static int material_grey_850=0x7f0e0029;
         public static int material_grey_900=0x7f0e002a;
+        public static int normal=0x7f0e004b;
         public static int notification_action_color_filter=0x7f0e0049;
         public static int notification_icon_bg_color=0x7f0e004a;
         public static int notification_material_background_media_default_color=0x7f0e003f;
@@ -2839,10 +2879,12 @@ containing a value of this type.
         public static int secondary_text_default_material_light=0x7f0e0036;
         public static int secondary_text_disabled_material_dark=0x7f0e0037;
         public static int secondary_text_disabled_material_light=0x7f0e0038;
+        public static int segmented_control_text=0x7f0e0069;
+        public static int selected=0x7f0e004e;
         public static int switch_thumb_disabled_material_dark=0x7f0e0039;
         public static int switch_thumb_disabled_material_light=0x7f0e003a;
-        public static int switch_thumb_material_dark=0x7f0e0065;
-        public static int switch_thumb_material_light=0x7f0e0066;
+        public static int switch_thumb_material_dark=0x7f0e006a;
+        public static int switch_thumb_material_light=0x7f0e006b;
         public static int switch_thumb_normal_material_dark=0x7f0e003b;
         public static int switch_thumb_normal_material_light=0x7f0e003c;
         public static int tooltip_background_dark=0x7f0e003d;
@@ -3005,6 +3047,8 @@ containing a value of this type.
         public static int notification_subtext_size=0x7f0900a1;
         public static int notification_top_pad=0x7f0900a2;
         public static int notification_top_pad_large_text=0x7f0900a3;
+        public static int segmented_control_default_height=0x7f0900a4;
+        public static int segmented_control_text_size=0x7f0900a5;
         public static int tooltip_corner_radius=0x7f090062;
         public static int tooltip_horizontal_padding=0x7f090063;
         public static int tooltip_margin=0x7f090064;
@@ -3103,13 +3147,13 @@ containing a value of this type.
         public static int arquitetura=0x7f020055;
         public static int artesvisuais=0x7f020056;
         public static int avd_hide_password=0x7f020057;
-        public static int avd_hide_password_1=0x7f020160;
-        public static int avd_hide_password_2=0x7f020161;
-        public static int avd_hide_password_3=0x7f020162;
+        public static int avd_hide_password_1=0x7f020163;
+        public static int avd_hide_password_2=0x7f020164;
+        public static int avd_hide_password_3=0x7f020165;
         public static int avd_show_password=0x7f020058;
-        public static int avd_show_password_1=0x7f020163;
-        public static int avd_show_password_2=0x7f020164;
-        public static int avd_show_password_3=0x7f020165;
+        public static int avd_show_password_1=0x7f020166;
+        public static int avd_show_password_2=0x7f020167;
+        public static int avd_show_password_3=0x7f020168;
         public static int cienciascontabeis=0x7f020059;
         public static int design_bottom_navigation_item_background=0x7f02005a;
         public static int design_fab_background=0x7f02005b;
@@ -3360,8 +3404,8 @@ containing a value of this type.
         public static int notification_bg_normal=0x7f020150;
         public static int notification_bg_normal_pressed=0x7f020151;
         public static int notification_icon_background=0x7f020152;
-        public static int notification_template_icon_bg=0x7f02015e;
-        public static int notification_template_icon_low_bg=0x7f02015f;
+        public static int notification_template_icon_bg=0x7f020161;
+        public static int notification_template_icon_low_bg=0x7f020162;
         public static int notification_tile_bg=0x7f020153;
         public static int notify_panel_notification_icon_bg=0x7f020154;
         public static int pedagogia=0x7f020155;
@@ -3369,10 +3413,13 @@ containing a value of this type.
         public static int psicologia=0x7f020157;
         public static int psicopedagogia=0x7f020158;
         public static int publicidadepropaganda=0x7f020159;
-        public static int setabaixo=0x7f02015a;
-        public static int setacima=0x7f02015b;
-        public static int tooltip_frame_dark=0x7f02015c;
-        public static int tooltip_frame_light=0x7f02015d;
+        public static int segmented_control_background=0x7f02015a;
+        public static int segmented_control_first_background=0x7f02015b;
+        public static int segmented_control_last_background=0x7f02015c;
+        public static int setabaixo=0x7f02015d;
+        public static int setacima=0x7f02015e;
+        public static int tooltip_frame_dark=0x7f02015f;
+        public static int tooltip_frame_light=0x7f020160;
     }
     public static final class id {
         public static int ALT=0x7f0a0032;
@@ -3674,14 +3721,15 @@ containing a value of this type.
         public static int notification_template_part_chronometer=0x7f04003d;
         public static int notification_template_part_time=0x7f04003e;
         public static int rootlayout=0x7f04003f;
-        public static int select_dialog_item_material=0x7f040040;
-        public static int select_dialog_multichoice_material=0x7f040041;
-        public static int select_dialog_singlechoice_material=0x7f040042;
-        public static int shellcontent=0x7f040043;
-        public static int support_simple_spinner_dropdown_item=0x7f040044;
-        public static int tabbar=0x7f040045;
-        public static int toolbar=0x7f040046;
-        public static int tooltip=0x7f040047;
+        public static int segmentedcontrol=0x7f040040;
+        public static int select_dialog_item_material=0x7f040041;
+        public static int select_dialog_multichoice_material=0x7f040042;
+        public static int select_dialog_singlechoice_material=0x7f040043;
+        public static int shellcontent=0x7f040044;
+        public static int support_simple_spinner_dropdown_item=0x7f040045;
+        public static int tabbar=0x7f040046;
+        public static int toolbar=0x7f040047;
+        public static int tooltip=0x7f040048;
     }
     public static final class mipmap {
         public static int icon=0x7f030000;
@@ -3689,6 +3737,8 @@ containing a value of this type.
         public static int launcher_foreground=0x7f030002;
     }
     public static final class string {
+        public static int ApplicationName=0x7f0b003d;
+        public static int Hello=0x7f0b003c;
         public static int abc_action_bar_home_description=0x7f0b0015;
         public static int abc_action_bar_up_description=0x7f0b0016;
         public static int abc_action_menu_overflow_description=0x7f0b0017;
@@ -3757,7 +3807,7 @@ containing a value of this type.
         public static int Animation_AppCompat_DropDownUp=0x7f0d00a7;
         public static int Animation_AppCompat_Tooltip=0x7f0d00a8;
         public static int Animation_Design_BottomSheetDialog=0x7f0d016e;
-        public static int AppCompatDialogStyle=0x7f0d0191;
+        public static int AppCompatDialogStyle=0x7f0d0192;
         public static int Base_AlertDialog_AppCompat=0x7f0d00a9;
         public static int Base_AlertDialog_AppCompat_Light=0x7f0d00aa;
         public static int Base_Animation_AppCompat_Dialog=0x7f0d00ab;
@@ -3925,10 +3975,10 @@ containing a value of this type.
         public static int CardView=0x7f0d000b;
         public static int CardView_Dark=0x7f0d000d;
         public static int CardView_Light=0x7f0d000e;
-        public static int MainTheme=0x7f0d018f;
+        public static int MainTheme=0x7f0d0190;
         /**  Base theme applied no matter what API 
          */
-        public static int MainTheme_Base=0x7f0d0190;
+        public static int MainTheme_Base=0x7f0d0191;
         public static int Platform_AppCompat=0x7f0d002d;
         public static int Platform_AppCompat_Light=0x7f0d002e;
         public static int Platform_ThemeOverlay_AppCompat=0x7f0d008e;
@@ -3957,6 +4007,7 @@ containing a value of this type.
         public static int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0d0045;
         public static int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0d0046;
         public static int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0d0047;
+        public static int SegmentedControlOption=0x7f0d018f;
         public static int TextAppearance_AppCompat=0x7f0d00d6;
         public static int TextAppearance_AppCompat_Body1=0x7f0d00d7;
         public static int TextAppearance_AppCompat_Body2=0x7f0d00d8;
@@ -4059,7 +4110,7 @@ containing a value of this type.
         public static int Theme_MediaRouter_Light=0x7f0d0004;
         public static int Theme_MediaRouter_Light_DarkControlPanel=0x7f0d0005;
         public static int Theme_MediaRouter_LightControlPanel=0x7f0d0006;
-        public static int Theme_Splash=0x7f0d0192;
+        public static int Theme_Splash=0x7f0d0193;
         public static int ThemeOverlay_AppCompat=0x7f0d0116;
         public static int ThemeOverlay_AppCompat_ActionBar=0x7f0d0117;
         public static int ThemeOverlay_AppCompat_Dark=0x7f0d0118;
@@ -10093,6 +10144,86 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android.support.mediacompat:voiceIcon
         */
         public static int SearchView_voiceIcon = 12;
+        /** Attributes that can be used with a SegmentedControlOption.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SegmentedControlOption_lineColor android.support.mediacompat:lineColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #SegmentedControlOption_lineHeightSelected android.support.mediacompat:lineHeightSelected}</code></td><td></td></tr>
+           <tr><td><code>{@link #SegmentedControlOption_lineHeightUnselected android.support.mediacompat:lineHeightUnselected}</code></td><td></td></tr>
+           <tr><td><code>{@link #SegmentedControlOption_segmentedControlOptionStyle android.support.mediacompat:segmentedControlOptionStyle}</code></td><td></td></tr>
+           </table>
+           @see #SegmentedControlOption_lineColor
+           @see #SegmentedControlOption_lineHeightSelected
+           @see #SegmentedControlOption_lineHeightUnselected
+           @see #SegmentedControlOption_segmentedControlOptionStyle
+         */
+        public static final int[] SegmentedControlOption = {
+            0x7f010173, 0x7f010174, 0x7f010175, 0x7f010176
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.support.mediacompat.R.attr#lineColor}
+          attribute's value can be found in the {@link #SegmentedControlOption} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.mediacompat:lineColor
+        */
+        public static int SegmentedControlOption_lineColor = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.support.mediacompat.R.attr#lineHeightSelected}
+          attribute's value can be found in the {@link #SegmentedControlOption} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.mediacompat:lineHeightSelected
+        */
+        public static int SegmentedControlOption_lineHeightSelected = 3;
+        /**
+          <p>This symbol is the offset where the {@link android.support.mediacompat.R.attr#lineHeightUnselected}
+          attribute's value can be found in the {@link #SegmentedControlOption} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.mediacompat:lineHeightUnselected
+        */
+        public static int SegmentedControlOption_lineHeightUnselected = 2;
+        /**
+          <p>This symbol is the offset where the {@link android.support.mediacompat.R.attr#segmentedControlOptionStyle}
+          attribute's value can be found in the {@link #SegmentedControlOption} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.mediacompat:segmentedControlOptionStyle
+        */
+        public static int SegmentedControlOption_segmentedControlOptionStyle = 0;
         /** Attributes that can be used with a SnackbarLayout.
            <p>Includes the following attributes:</p>
            <table>

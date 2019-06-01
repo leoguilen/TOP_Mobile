@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:messier16="clr-namespace:Messier16.Forms.Controls;assembly=Messier16.Forms.Controls"
+             x:Class="AppTop.ModelView.PageAvaliacao" Appearing="ContentPage_Appearing">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" Padding="50">
+            <AbsoluteLayout HorizontalOptions="CenterAndExpand">
+                <Label Text="AVALIE SEU RESULTADO"
+                   TextColor="Black"
+                   FontSize="23" FontAttributes="Bold" HeightRequest="50"/>
+            </AbsoluteLayout>
+            <StackLayout Margin="0,15,0,0" HorizontalOptions="CenterAndExpand">
+                <Label Text="Quantas estrelas esse resultado merece?" 
+                   TextColor="Black" FontSize="18" Margin="5" 
+                   HorizontalTextAlignment="Center"/>
+                <messier16:RatingBar FilledImage="starfull" Image="starempty" 
+                                 MaxRating="5" FillColor="#ffd700" 
+                                 HeightRequest="85" Rating="{Binding Rating, Mode=TwoWay}"/>
+                <Label x:Name="lblNumRating" Text="{Binding Rating}" IsVisible="False"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand"
+                     Margin="0,-8,0,0">
+                <Editor x:Name="txtAvaliacao" BackgroundColor="#d3d3d3"
+              TextColor="Black" HeightRequest="180" 
+                    FontSize="13" Placeholder="Diga o que achou sobre o seu resultado (Opcional)"
+                    PlaceholderColor="Black"/>
+            </StackLayout>
+            <Button Text="Enviar Avaliação" VerticalOptions="EndAndExpand" 
+                BorderWidth="2" BorderColor="White"
+                TextColor="White" BackgroundColor="Teal" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
